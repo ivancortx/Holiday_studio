@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { createContext } from 'react'
+import ReactDOM from 'react-dom'
+import firebase from 'firebase/compat'
+
+import App from './App'
+
+import './index.css'
+
+firebase.initializeApp({
+    apiKey: "AIzaSyAH78pb7WP_HnIIFkt8YEQ7Kx-AAldNvXQ",
+    authDomain: "holiday-studio.firebaseapp.com",
+    projectId: "holiday-studio",
+    storageBucket: "holiday-studio.appspot.com",
+    messagingSenderId: "950586530550",
+    appId: "1:950586530550:web:9a234a7be9686c3c706ad7",
+    measurementId: "G-LCYXGTMBRC"
+  }
+)
+
+export const Context = createContext<any>(null)
+
+const auth: any = firebase.auth()
+const firestore: any = firebase.firestore()
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Context.Provider value={{ auth, firestore }}>
+      <App />
+    </Context.Provider>
   </React.StrictMode>,
   document.getElementById('root')
-);
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

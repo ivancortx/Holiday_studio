@@ -1,0 +1,37 @@
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fcfcfc;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  min-height: 100vh;
+  font-weight: 600;
+  margin-right: 5px;
+  text-align: center;
+
+  .navButtonsContainer {
+    display: flex;
+
+
+  }
+  .button{
+    margin: 20px;
+
+    a{
+      text-decoration: none;
+      color: #315221;
+      text-transform: uppercase;
+      transition: color 0.2s linear;
+
+      &:hover{
+        color: #c1aa3f
+      }
+    }
+  }
+
+  .authButton {
+    margin: 20px;
+   cursor: pointer;
+
+  }
+}

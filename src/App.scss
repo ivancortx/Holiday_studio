@@ -1,0 +1,15 @@
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+
+  .content{
+    background-color: #fcfcfc;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    min-height: 100vh;
+  }
+}
