@@ -6,11 +6,11 @@ import { privateRoutes, publicRoutes } from '../const/routes'
 import { AboutMePage } from 'ui/aboutMe'
 import { HomePage } from 'ui/home'
 import { SettingsPage } from '../../settings/pages/HomePage'
-import { Context } from '../../../index'
+import { AuthContext } from '../../../firebase/Auth'
 
 
 export const AppRoutes: React.VFC = () => {
-  const {auth} = useContext(Context)
+  const {auth} = useContext(AuthContext)
   const userIsAuth: any = useAuthState(auth)
 
   return userIsAuth[0] ?

@@ -5,10 +5,11 @@ import { NavigationPage } from './ui/navigation/pages'
 import { AppRoutes } from './ui/navigation/components/AppRoutes'
 
 import './App.scss'
+import { AuthProvider } from './firebase/Auth'
 
 const App: React.FC = ( ) => {
   return (
-    <div>
+    <AuthProvider>
       <BrowserRouter>
         <div className="container">
           <NavigationPage />
@@ -17,7 +18,7 @@ const App: React.FC = ( ) => {
           </div>
         </div>
       </BrowserRouter>
-    </div>
+    </AuthProvider>
   )
 }
 
