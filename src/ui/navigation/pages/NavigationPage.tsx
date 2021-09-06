@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuthState } from 'react-firebase-hooks/auth'
 
@@ -6,12 +6,11 @@ import { privateRoutes, publicRoutes } from '../const/routes'
 import { Login } from '../components/Login'
 import { LogOut } from '../components/LogOut'
 
-
 import styles from './NavidationPage.module.scss'
-import { AuthContext } from '../../../firebase/Auth'
+import firebaseApp from '../../../firebase/firebase'
 
 export const NavigationPage: React.VFC = ( ) => {
-  const {auth} = useContext(AuthContext)
+  const auth =  firebaseApp.auth()
   const userIsAuth: any = useAuthState(auth)
 
   return (

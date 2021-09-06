@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Redirect, Route, Switch } from 'react-router-dom'
 import { useAuthState } from 'react-firebase-hooks/auth'
 
@@ -6,11 +6,11 @@ import { privateRoutes, publicRoutes } from '../const/routes'
 import { AboutMePage } from 'ui/aboutMe'
 import { HomePage } from 'ui/home'
 import { SettingsPage } from '../../settings/pages/HomePage'
-import { AuthContext } from '../../../firebase/Auth'
+import firebaseApp from '../../../firebase/firebase'
 
 
 export const AppRoutes: React.VFC = () => {
-  const {auth} = useContext(AuthContext)
+  const auth =  firebaseApp.auth()
   const userIsAuth: any = useAuthState(auth)
 
   return userIsAuth[0] ?
