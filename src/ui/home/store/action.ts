@@ -21,8 +21,7 @@ export const fetchPosts = () => async (dispatch: Dispatch<ActionsTypes>) => {
   const homeDataRef = base.collection("homeData").doc("homeData-postsData")
   const data = await homeDataRef.get()
 
-// @ts-ignore
-  dispatch(setPosts(data.data().postsData))
+  dispatch(setPosts(data.data()?.postsData??[]))
 }
 
 export const addPost = (post: PostType, posts: PostType[]) => () => {
