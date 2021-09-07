@@ -1,17 +1,23 @@
 type PublicRoutesType = {
-  Home: string,
-  AboutMe: string
+  Home: string
+  PhotoPage: string
+  PhotoPageCategory: string
 }
 
 type PrivateRoutesType = {
   Settings: string
+  PhotoPage: string
+  PhotoPageCategory: string
 }
 
 export const publicRoutes: PublicRoutesType = {
   Home: '/',
-  AboutMe: '/about-me'
+  PhotoPage: '/photo',
+  PhotoPageCategory: '/photo/:title?'
 }
 
 export const privateRoutes: PrivateRoutesType = {
-  Settings: '/settings'
+  Settings: '/settings',
+  PhotoPage: '/photo',
+  PhotoPageCategory: '/photo/:title?'
 }

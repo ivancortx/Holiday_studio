@@ -1,41 +1,44 @@
-import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-import firebase from 'firebase/compat'
+import React from 'react'
 
-import { fetchPosts } from '../../store/action'
-import { PostItem } from '../../components/PostItem'
-import { useHomePage } from '../../hooks/useHomePage'
-import { AddPost } from '../../components/AddPost'
+import foto from 'assets/images/Home page/foto.jpg'
+import kino from 'assets/images/Home page/film.jpg'
+import service from 'assets/images/Home page/service.jpg'
+
+import styles from './HomePage.module.scss'
+import { Link } from 'react-router-dom'
+import { publicRoutes } from '../../../navigation/const/routes'
 
 export const HomePage: React.VFC = () => {
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(fetchPosts())
-  }, [dispatch])
-
-  const { homeData } = useHomePage()
-  const base = firebase.firestore();
-
-  useEffect(() => {
-    base.collection("homeData").doc("homeData-postsData")
-      .onSnapshot((doc) => {
-        dispatch(fetchPosts())
-      })
-  }, [base, dispatch])
-
-  if (!homeData.postsData[0]) {
-    return <div>Loading...</div>
-  } else {
-    return (
-      <div>
-        {homeData.postsData.map((post) => (
-          <PostItem key={post.id}
-                    post={post}/>))
-        }
-        <div>
-          <AddPost/>
+  return (
+    <div className={styles.container}>
+      <div className={styles.linksBlock}>
+        <div className={styles.link}>
+          <div>
+            <img src={foto}/>
+          </div>
+          <div>
+            <div className={styles.linkText}>
+              <Link to={publicRoutes.PhotoPage}>Фотографії</Link>
+            </div>
+          </div>
+        </div>
+        <div className={styles.link}>
+          <div>
+            <img src={kino}/>
+          </div>
+          <div className={styles.linkText}>
+            <Link to={publicRoutes.PhotoPage}>Кіно</Link>
+          </div>
+        </div>
+        <div className={styles.link}>
+          <div>
+            <img src={service}/>
+          </div>
+          <div className={styles.linkText}>
+            <Link to={publicRoutes.PhotoPage}>Послуги</Link>
+          </div>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }

@@ -1,2 +1,1 @@
-export { HomePage } from './pages/HomePage'
-export { reducer } from './store/reducer'
+export {HomePage} from './pages/homePage'

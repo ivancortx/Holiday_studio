@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+}
+
+.container:before {
+  text-align: center;
+  display: none;
+  content: "";
+  width: 60%;
+  background-color: #8e8e8e;
+  height: 1px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+}
+
+.contactsBlock {
+  margin: 0 auto 15px;
+  width: 82%;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+}
+
+.contactsItem {
+  text-align: center;
+}
+
+.contactsItem a{
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #8e8e8e;
+}
+
+.contactsItem a:hover {
+  color: greenyellow;
+}
+
+.messengers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.messengers img {
+  width: 25px;
+  margin: 10px 5px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.6em;
+  color: #8e8e8e;
+}

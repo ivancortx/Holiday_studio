@@ -1,10 +1,11 @@
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 
-import { reducer as homeReducer } from 'ui/home'
+import {reducer as photoCategoryReducer} from 'ui/photo/store/reducer'
+
 
 let reducers = combineReducers({
-  homeData: homeReducer,
+  photoCategoryData: photoCategoryReducer,
 })
 
 type RootReducerType = typeof reducers; // (globalstate: AppStateType) => AppStateType

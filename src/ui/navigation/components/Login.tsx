@@ -1,6 +1,8 @@
 import React from 'react'
 import firebase from 'firebase/compat'
 
+import styles from './LoginAndLogout.module.scss'
+
 type Props = {
   auth: any
 }
@@ -12,8 +14,8 @@ export const Login: React.VFC<Props> = ({ auth }) => {
   }
 
   return (
-    <div onClick={login}>
-      Логин
+    <div className={styles.container} onClick={login}>
+      <span className={styles.btn}>Login</span>
     </div>
   )
 }

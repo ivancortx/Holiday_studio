@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { AddPostForm } from '../forms/AddPostForm'
-import firebaseApp from '../../../firebase/firebase'
+import firebaseApp from '../../src/firebase/firebase'
 
 const db = firebaseApp.firestore()
 

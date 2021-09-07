@@ -5,6 +5,7 @@ import { NavigationPage } from './ui/navigation/pages'
 import { AppRoutes } from './ui/navigation/components/AppRoutes'
 
 import './App.scss'
+import { FooterPage } from './ui/footer/pages/FooterPage'
 
 const App: React.FC = ( ) => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = ( ) => {
           <div className="content">
             <AppRoutes />
           </div>
+         <FooterPage />
         </div>
       </BrowserRouter>
   )

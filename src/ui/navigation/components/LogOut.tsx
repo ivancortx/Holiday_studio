@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './LoginAndLogout.module.scss'
 
 type Props = {
   auth: any
@@ -10,8 +11,8 @@ export const LogOut: React.VFC<Props> = ({ auth }) => {
   }
 
   return (
-    <div onClick={exit}>
-      Выйти
+    <div className={styles.container} onClick={exit}>
+      <span className={styles.btn}>LogOut</span>
     </div>
   )
 }
