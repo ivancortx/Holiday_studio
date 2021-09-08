@@ -3,7 +3,8 @@ import { AppStateType } from '../../../store'
 
 export const usePhotoPageHooks = () => {
   const photoCategories = useSelector((state: AppStateType) => state.photoCategoryData.photoCategory)
-  const weddingData = useSelector((state: AppStateType) => state.photoCategoryData.weddingData)
+  const photoData = useSelector((state: AppStateType) => state.photoCategoryData.photoData)
 
-  return ({ photoCategories, weddingData })
+
+  return ({ photoCategories, photoData })
 }

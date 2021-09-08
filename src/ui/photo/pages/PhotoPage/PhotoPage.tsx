@@ -9,6 +9,7 @@ export const PhotoPage: React.VFC = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.title}><span>Портфоліо фотографій</span></div>
       <div className={styles.linksBlock}>
       {
         photoCategories.map((category =>

@@ -6,7 +6,7 @@ export type PhotoCategoryType = {
 }
 
 export type PhotoType = {
-  id: number
+  id: string
   image: any
 }
 

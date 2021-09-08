@@ -1,16 +1,45 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { usePhotoPageHooks } from '../hooks/usePhotoPageHooks'
 
 import styles from './PhotoByCategory.module.scss'
+import { useParams } from 'react-router'
+import { useDispatch } from 'react-redux'
+import { fetchPhotos } from '../store/action'
+import { AddPhotoForm } from './AddPhotoForm'
+import firebase from 'firebase/compat'
+import { CategoryTranslator } from './CategoryTranslator'
 
 
 export const PhotoByCategory: React.VFC = () => {
-  const { weddingData } = usePhotoPageHooks()
+
+  const { title } = useParams<{ title: string }>();
+
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(fetchPhotos(title))
+  }, [title, dispatch])
+
+  const base = firebase.firestore();
+  useEffect(() => {
+    base.collection("photosData").doc(title)
+      .onSnapshot((doc) => {
+        dispatch(fetchPhotos(title))
+      })
+  }, [base, dispatch, title])
+
+  const { photoData } = usePhotoPageHooks()
+
 
   return (
-      <div className={styles.container}>
+    photoData?
+    <div className={styles.container}>
+
+      <div className={styles.title}>
+        <CategoryTranslator title={title}/>
+      </div>
+
         <div className={styles.linksBlock}>
-      {weddingData.map(photo => (
+      {photoData.map(photo => (
             <div key={photo.id} className={styles.link}>
               <div>
                 <img src={photo.image}/>
@@ -24,6 +53,14 @@ export const PhotoByCategory: React.VFC = () => {
       ))
       }
         </div>
+      <AddPhotoForm title={title}
+                    photoData={photoData}/>
+    </div>
+      :
+      <div className={styles.empty}>
+        Фотографії в даному розділі відсутні
+        <AddPhotoForm title={title}
+                      photoData={[]}/>
       </div>
   )
 }
