@@ -7,17 +7,17 @@ import { AppRoutes } from './ui/navigation/components/AppRoutes'
 import './App.scss'
 import { FooterPage } from './ui/footer/pages/FooterPage'
 
-const App: React.FC = ( ) => {
+const App: React.FC = () => {
   return (
-      <BrowserRouter>
-        <div className="container">
-          <NavigationPage />
-          <div className="content">
-            <AppRoutes />
-          </div>
-         <FooterPage />
+    <BrowserRouter>
+      <div className="container">
+        <NavigationPage/>
+        <div className="content">
+          <AppRoutes/>
         </div>
-      </BrowserRouter>
+        <FooterPage/>
+      </div>
+    </BrowserRouter>
   )
 }
 

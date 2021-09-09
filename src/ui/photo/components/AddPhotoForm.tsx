@@ -5,6 +5,7 @@ import firebaseApp from '../../../firebase/firebase'
 import { PhotoType } from '../interfaces/photoPage/photoPageInterfaces'
 
 import styles from './AddPhotoForm.module.scss'
+import 'scss/custom.scss'
 
 const db = firebaseApp.firestore()
 
@@ -20,6 +21,7 @@ export const AddPhotoForm: React.VFC<Props> = ({title, photoData}) => {
 
 
   const saveFile = async (e: any) => {
+    debugger
     const file = e.target.files[0]
     const storageRef = firebaseApp.storage().ref()
     const pathPhoto = `assets/images/${title}/${file.name}`
@@ -58,12 +60,16 @@ export const AddPhotoForm: React.VFC<Props> = ({title, photoData}) => {
   return (
     <div className={styles.container}>
      <div className={styles.form}>
-       <form onSubmit={onSubmit}>
-         <input type='file' onChange={saveFile} />
-         {/*<input type='text' name='forTest' placeholder='forTest' />*/}
 
-         <button disabled={!isUploaded}>Завантажити</button>
-       </form>
+         <div className={styles.formBlock}>
+           <div className="input-group">
+             <input onChange={saveFile} type="file" className="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+                    aria-label="Upload"/>
+             <button disabled={!isUploaded} onClick={onSubmit} className="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Завантажити</button>
+           </div>
+         </div>
+
+
      </div>
 
     </div>

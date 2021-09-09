@@ -9,6 +9,8 @@ import { AddPhotoForm } from './AddPhotoForm'
 import firebase from 'firebase/compat'
 import { CategoryTranslator } from './CategoryTranslator'
 import { DeletePhoto } from './DeletePhoto'
+import { Portal } from './Portal'
+import { PhotoType } from '../interfaces/photoPage/photoPageInterfaces'
 
 
 export const PhotoByCategory: React.VFC = () => {
@@ -30,9 +32,25 @@ export const PhotoByCategory: React.VFC = () => {
 
   const { photoData } = usePhotoPageHooks()
 
+  const [openModal, setOpenModal] = useState<boolean>(false)
+  const [fotoToModal, setFotoToModal] = useState<PhotoType>({id: '', image: '', path: ''} )
+
+  const photoHandler = (photo: PhotoType) => {
+    setFotoToModal(photo)
+    setOpenModal(true)
+
+  }
+
+
+  const closeModal = () => {
+    setOpenModal(false)
+  }
+
 
   return (
     photoData ?
+
+
       <div className={styles.container}>
 
         <div className={styles.title}>
@@ -42,6 +60,11 @@ export const PhotoByCategory: React.VFC = () => {
         <div className={styles.linksBlock}>
           {photoData.map(photo => (
             <div key={photo.id}>
+              {openModal && <div className={styles.portal}>
+                <Portal openModal={openModal}
+                        closeModal={closeModal}
+                        photo={fotoToModal}/>
+              </div>}
               <div className={styles.link}>
                 <div className={styles.deletePhotoButton}>
                   <DeletePhoto photo={photo}
@@ -49,7 +72,7 @@ export const PhotoByCategory: React.VFC = () => {
                                title={title}/>
                 </div>
                 <div>
-                  <img src={photo.image}/>
+                  <img onClick={() => photoHandler(photo)} src={photo.image}/>
                 </div>
                 <div>
                   {/*<div className={styles.linkText}>*/}
@@ -72,3 +95,5 @@ export const PhotoByCategory: React.VFC = () => {
       </div>
   )
 }
+
+

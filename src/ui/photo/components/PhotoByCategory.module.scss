@@ -1,6 +1,11 @@
 .container {
   margin: 0 auto 40px;
   width: 100%;
+  z-index: 2;
+}
+
+.portal {
+  z-index: 1;
 }
 
 .title {
