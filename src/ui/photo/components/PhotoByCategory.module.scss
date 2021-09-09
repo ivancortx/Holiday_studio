@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto 40px;
-  width: 80%;
+  width: 100%;
 }
 
 .title {
@@ -12,7 +12,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 32% 32% 32%;
-  grid-gap: 2%;
+  grid-gap: 1%;
 }
 
 .link {
@@ -21,13 +21,12 @@
 
 .link img {
   width: 100%;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-}
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 
-.link img:hover {
-  opacity: .7;
+  &:hover {
+    opacity: .7;
+  }
 }
-
 
 .linkText {
   text-align: center;
@@ -45,3 +44,17 @@
 .empty {
   text-align: center;
 }
+
+.deletePhotoButton {
+  width: 1.5%;
+  margin: 0.5%;
+  position: absolute;
+  text-align: left;
+  z-index: 2;
+
+
+  img {
+    box-shadow: none;
+  }
+}
+

@@ -15,16 +15,19 @@ type Props = {
 
 export const AddPhotoForm: React.VFC<Props> = ({title, photoData}) => {
   const [fileUrl, setFileUrl] = useState<string>('')
+  const [filePath, setFilePath] = useState<string>('')
   const [isUploaded, setIsUploaded] = useState(false)
 
 
   const saveFile = async (e: any) => {
     const file = e.target.files[0]
     const storageRef = firebaseApp.storage().ref()
-    const fileRef = storageRef.child(`assets/images/${title}/${file.name}`)
+    const pathPhoto = `assets/images/${title}/${file.name}`
+    const fileRef = storageRef.child(pathPhoto)
     const metadata = {contentType: 'image/jpeg'}
-    const uploadTask = await fileRef.put(file, metadata)
+    await fileRef.put(file, metadata)
     setFileUrl(await fileRef.getDownloadURL())
+    setFilePath(pathPhoto)
 
    if(await fileRef.getDownloadURL()) {
      setIsUploaded(true)
@@ -42,7 +45,8 @@ export const AddPhotoForm: React.VFC<Props> = ({title, photoData}) => {
 
     photoData.push({
       id: `${identifier}`,
-      image: fileUrl
+      image: fileUrl,
+      path: filePath
     })
     db.collection('photosData').doc(title).set({
        [`${title}`]: photoData

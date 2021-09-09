@@ -8,5 +8,6 @@ export type PhotoCategoryType = {
 export type PhotoType = {
   id: string
   image: any
+  path: string
 }
 
