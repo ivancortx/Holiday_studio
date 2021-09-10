@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8db9c5f9-5a70-4017-8d80-a7eaa06a1fee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/src/config/firebase-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/config/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/middleware/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/components/AddPost.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/components/PostItem.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/components/PostItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/forms/AddPostForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/forms/AddPostFormField.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/forms/validate.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/hooks/useHomePage.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/interfaces/postItem/postItemInterfaces.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/pages/HomePage/HomePage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/pages/HomePage/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/store/action.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/store/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logicExamp/store/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/custom.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Home page/film.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Home page/foto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Home page/service.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/birthday.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/vignette.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/PhotoPage/wedding/DSC02296.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/closeModal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/deleteItem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (14).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (16).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (18).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (19).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (20).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (21).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (22).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (23).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (24).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (25).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (26).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (27).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (28).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (29).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (30).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (31).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (32).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (34).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (35).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (36).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (37).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (38).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (39).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (40).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (41).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (42).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (43).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (44).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (45).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (46).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (47).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (48).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (49).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (50).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (51).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (52).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (53).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (54).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (55).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (56).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (57).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (58).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (59).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (60).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (61).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (62).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (63).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (64).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (65).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (66).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (67).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (68).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (69).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (70).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (71).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (72).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/Social Icons by Dreamstale (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/telegram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/social_icons/youtube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/firebase.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/custom.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/aboutMe/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/aboutMe/pages/AboutMePage/AboutMePage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/aboutMe/pages/AboutMePage/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/footer/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/footer/pages/FooterPage/FooterPage.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/footer/pages/FooterPage/FooterPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/footer/pages/FooterPage/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/home/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/home/pages/HomePage/HomePage.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/home/pages/HomePage/HomePage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/home/pages/HomePage/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/navigation/components/AppRoutes.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/navigation/components/Button.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/navigation/components/Button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/navigation/components/LogOut.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/navigation/components/Login.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/navigation/components/LoginAndLogout.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/navigation/const/routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/navigation/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/navigation/pages/NavidationPage.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/navigation/pages/NavigationPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/navigation/pages/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/components/AddPhotoForm.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/components/AddPhotoForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/components/CategoryTranslator.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/components/DeletePhoto.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/components/PhotoByCategory.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/components/PhotoByCategory.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/components/PhotoLinkItem.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/components/PhotoLinkItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/components/Portal.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/components/Portal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/hooks/usePhotoPageHooks.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/interfaces/photoPage/photoPageInterfaces.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/pages/PhotoPage/PhotoPage.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/pages/PhotoPage/PhotoPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/pages/PhotoPage/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/store/action.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/store/reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/photo/store/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/review/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/review/pages/ReviewsPage/ReviewsPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/review/pages/ReviewsPage/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1xxtRuW7GwMfHTENHlKU4Z2K6wR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\node_modules\typescript\lib" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8db9c5f9-5a70-4017-8d80-a7eaa06a1fee" name="Default Changelist" comment="" />
+      <created>1631308562221</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631308562221</updated>
+      <workItem from="1631308563507" duration="4424000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
