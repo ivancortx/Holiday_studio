@@ -13,13 +13,12 @@ type Props = {
 export const Portal: React.VFC<Props> = ({ openModal, closeModal, photo }) => {
   if (!openModal) return null
 
-
   return ReactDOM.createPortal(
-    <div className={styles.container}>
+    <div  className={styles.container}>
       <div className={styles.image}>
-        <img src={photo.image} alt={'image'}/>
-        <div className={styles.button} onClick={closeModal}>
-          <img className={styles.closeBtn} src={close} alt={'close'}/>
+        <img onClick={closeModal} src={photo.image} alt={'image'}/>
+        <div className={styles.button} >
+          <img className={styles.closeBtn} onClick={closeModal} src={close} alt={'close'}/>
         </div>
       </div>
     </div>,

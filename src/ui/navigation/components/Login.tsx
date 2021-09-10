@@ -2,15 +2,27 @@ import React from 'react'
 import firebase from 'firebase/compat'
 
 import styles from './LoginAndLogout.module.scss'
+import firebaseApp from '../../../firebase/firebase'
 
 type Props = {
   auth: any
+  setToken: (token: string) => void
+  setIsAuthorized: (arg: boolean) => void
 }
 
-export const Login: React.VFC<Props> = ({ auth }) => {
+export const Login: React.VFC<Props> = ({ auth, setToken, setIsAuthorized }) => {
+
   const login = async () => {
     const provider = new firebase.auth.GoogleAuthProvider()
-    const { user } = await auth.signInWithPopup(provider)
+    await auth.signInWithPopup(provider)
+    await firebaseApp.auth().onAuthStateChanged((userCred) => {
+      if (userCred) {
+        userCred.getIdToken().then((token) => {
+          setToken(token)
+          setIsAuthorized(true)
+        })
+      }
+    })
   }
 
   return (

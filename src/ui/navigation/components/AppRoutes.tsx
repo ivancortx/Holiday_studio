@@ -4,10 +4,10 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 
 import { privateRoutes, publicRoutes } from '../const/routes'
 import { HomePage } from 'ui/home'
-import { SettingsPage } from '../../settings/pages/HomePage'
 import firebaseApp from '../../../firebase/firebase'
 import { PhotoPage } from '../../photo/pages/PhotoPage'
 import { PhotoByCategory } from '../../photo/components/PhotoByCategory'
+import { ReviewsPage } from '../../review/pages/ReviewsPage/ReviewsPage'
 
 
 export const AppRoutes: React.VFC = () => {
@@ -19,7 +19,7 @@ export const AppRoutes: React.VFC = () => {
       <Route path={publicRoutes.Home} exact component={HomePage}/>
       <Route path={publicRoutes.PhotoPage} exact component={PhotoPage}/>
       <Route path={publicRoutes.PhotoPageCategory} exact component={PhotoByCategory}/>
-      <Route path={privateRoutes.Settings} exact component={SettingsPage}/>
+      <Route path={publicRoutes.ReviewsPage} exact component={ReviewsPage}/>
 
       <Redirect to={publicRoutes.Home}/>
     </Switch>)
@@ -28,6 +28,7 @@ export const AppRoutes: React.VFC = () => {
       <Route path={publicRoutes.Home} exact component={HomePage}/>
       <Route path={publicRoutes.PhotoPage} exact component={PhotoPage}/>
       <Route path={publicRoutes.PhotoPageCategory} exact component={PhotoByCategory}/>
+      <Route path={publicRoutes.ReviewsPage} exact component={ReviewsPage}/>
       <Redirect to={publicRoutes.Home}/>
     </Switch>)
 }

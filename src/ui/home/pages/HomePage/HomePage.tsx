@@ -9,35 +9,42 @@ import { Link } from 'react-router-dom'
 import { publicRoutes } from '../../../navigation/const/routes'
 
 export const HomePage: React.VFC = () => {
+
   return (
     <div className={styles.container}>
       <div className={styles.linksBlock}>
-        <div className={styles.link}>
-          <div>
-            <img src={foto}/>
-          </div>
-          <div>
-            <div className={styles.linkText}>
-              <Link to={publicRoutes.PhotoPage}>Фотографії</Link>
+        <Link to={publicRoutes.PhotoPage}>
+          <div className={styles.link}>
+            <div>
+              <img src={foto} alt={'photo'}/>
+            </div>
+            <div>
+              <div className={styles.linkText}>
+                Фотографії
+              </div>
             </div>
           </div>
-        </div>
-        <div className={styles.link}>
-          <div>
-            <img src={kino}/>
+        </Link>
+        <Link to={publicRoutes.PhotoPage}>
+          <div className={styles.link}>
+            <div>
+              <img src={kino} alt={'kino'}/>
+            </div>
+            <div className={styles.linkText}>
+              Кіно
+            </div>
           </div>
-          <div className={styles.linkText}>
-            <Link to={publicRoutes.PhotoPage}>Кіно</Link>
+        </Link>
+        <Link to={publicRoutes.PhotoPage}>
+          <div className={styles.link}>
+            <div>
+              <img src={service} alt={'service'}/>
+            </div>
+            <div className={styles.linkText}>
+              Послуги
+            </div>
           </div>
-        </div>
-        <div className={styles.link}>
-          <div>
-            <img src={service}/>
-          </div>
-          <div className={styles.linkText}>
-            <Link to={publicRoutes.PhotoPage}>Послуги</Link>
-          </div>
-        </div>
+        </Link>
       </div>
     </div>
   )

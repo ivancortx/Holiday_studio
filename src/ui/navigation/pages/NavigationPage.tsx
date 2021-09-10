@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuthState } from 'react-firebase-hooks/auth'
 
@@ -12,28 +12,36 @@ import { Button } from '../components/Button'
 import logo from 'assets/images/logo.png'
 
 export const NavigationPage: React.VFC = () => {
+
+  const [token, setToken] = useState('')
+  const [isAuthorized, setIsAuthorized] = useState(false ||
+    window.localStorage.getItem('auth') === 'true')
   const auth = firebaseApp.auth()
   const userIsAuth: any = useAuthState(auth)
 
+  useEffect(() => {
+    window.localStorage.setItem('auth', 'true')
+  }, [token])
+
+
   return (
     <div className={styles.navContainer}>
-
-
       <div className={styles.logoAndLoginContainer}>
-
         <div className={styles.logo}>
           <img src={logo}/>
         </div>
-
         <div className={styles.authButton}>
           {userIsAuth[0] ?
-            <LogOut auth={auth}/>
+            <LogOut auth={auth}
+                    setIsAuthorized={setIsAuthorized}
+                    token={token}/>
             :
-            <Login auth={auth}/>
+            <Login auth={auth}
+                   setToken={setToken}
+                   setIsAuthorized={setIsAuthorized}
+                   />
           }
         </div>
-
-
       </div>
 
       <div className={styles.navButtonsContainer}>
@@ -47,10 +55,10 @@ export const NavigationPage: React.VFC = () => {
           <Link to={publicRoutes.PhotoPage}><Button text={'Фото'}/></Link>
         </div>
         <div className={styles.button}>
-          <Link to={publicRoutes.PhotoPage}><Button text={'Контакти'}/></Link>
+          <Link to={publicRoutes.PhotoPage}><Button text={'Послуги'}/></Link>
         </div>
         <div className={styles.button}>
-          <Link to={publicRoutes.PhotoPage}><Button text={'Послуги'}/></Link>
+          <Link to={publicRoutes.ReviewsPage}><Button text={'Відгуки'}/></Link>
         </div>
         {/*{userIsAuth[0] && <div className={styles.button}>*/}
         {/*  <Link to={privateRoutes.Settings}>Админка</Link>*/}

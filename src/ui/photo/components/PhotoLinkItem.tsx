@@ -19,7 +19,7 @@ export const PhotoLinkItem: React.VFC<Props> = ({ category }) => {
       </div>
       <div>
         <div className={styles.linkText}>
-          <a>{category.name}</a>
+          <span>{category.name}</span>
         </div>
       </div>
     </div>
