@@ -4,23 +4,28 @@ class Middleware {
   async decodeToken(req, res, next) {
     const token = req.headers.authorization.split(' ')[1]
 
-   try  {
-     const decodeValue = await admin.auth().verifyIdToken(token)
-     console.log(decodeValue)
+    try {
+      const decodeValue = await admin.auth().verifyIdToken(token)
+      admin
+          .auth()
+          .setCustomUserClaims(decodeValue.uid, { admin: true })
+          .then(() => {
+          });
 
-     if (decodeValue) {
-       return next()
-     }
+      if (decodeValue) {
+        return next()
+      }
 
-     return res.json({message: 'Un authorize'})
-   } catch (e) {
-     return res.json({message: 'Internal Error'})
-   }
-   
+      return res.json({message: 'Un authorize'})
+    } catch (e) {
+      return res.json({message: 'Internal Error'})
+    }
   }
 
-  async createUser (user) {
-  admin.auth()
+
+
+  async createUser(user) {
+    admin.auth()
         .createUser({
           // email: 'user@example.com',
           // emailVerified: false,
@@ -30,6 +35,7 @@ class Middleware {
           // photoURL: 'http://www.example.com/12345678/photo.png',
           // disabled: false,
         })
+        .setCustomUserClaims(decodeValue.uid, { admin: false })
         .then((userRecord) => {
           // See the UserRecord reference doc for the contents of userRecord.
           console.log('Successfully created new user:', userRecord.uid);
@@ -38,6 +44,9 @@ class Middleware {
           console.log('Error creating new user:', error);
         });
   }
+
+
+
 }
 
 module.exports = new Middleware()
