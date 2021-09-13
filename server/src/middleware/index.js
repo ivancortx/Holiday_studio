@@ -1,24 +1,28 @@
 const admin = require('../config/firebase-config')
+const firestore = admin.firestore();
 
 class Middleware {
   async decodeToken(req, res, next) {
-    const token = req.headers.authorization.split(' ')[1]
 
-    try {
-      const decodeValue = await admin.auth().verifyIdToken(token)
-      admin
-          .auth()
-          .setCustomUserClaims(decodeValue.uid, { admin: true })
-          .then(() => {
-          });
+    if (req.headers.authorization) {
+      const token = req.headers.authorization.split(' ')[1]
+      console.log(req)
+      try {
+        const decodeValue = await admin.auth().verifyIdToken(token)
+        admin
+            .auth()
+            .setCustomUserClaims(decodeValue.uid, { admin: false })
+            .then(() => {
+            });
 
-      if (decodeValue) {
-        return next()
+        if (decodeValue) {
+          return next()
+        }
+
+        return res.json({message: 'Un authorize'})
+      } catch (e) {
+        return res.json({message: 'Internal Error'})
       }
-
-      return res.json({message: 'Un authorize'})
-    } catch (e) {
-      return res.json({message: 'Internal Error'})
     }
   }
 
@@ -48,5 +52,6 @@ class Middleware {
 
 
 }
+
 
 module.exports = new Middleware()

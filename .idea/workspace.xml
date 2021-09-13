@@ -20,11 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db9c5f9-5a70-4017-8d80-a7eaa06a1fee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/config/setData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/api/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/controllers/holidayStudioController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/routes/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.env" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/LogOut.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/LogOut.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/DeletePhoto.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/DeletePhoto.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/interfaces/photoPage/photoPageInterfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/interfaces/photoPage/photoPageInterfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/store/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/store/action.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/config/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/config/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/middleware/index.js" afterDir="false" />
     </list>
@@ -45,9 +50,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -61,7 +72,7 @@
       <updated>1631308562221</updated>
       <workItem from="1631308563507" duration="4424000" />
       <workItem from="1631458683603" duration="990000" />
-      <workItem from="1631465170201" duration="14270000" />
+      <workItem from="1631465170201" duration="32715000" />
     </task>
     <servers />
   </component>
@@ -81,13 +92,33 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="935" y="503" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1631549061106">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="935" y="503" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631549061106" />
+    <state x="947" y="456" key="FileChooserDialogImpl" timestamp="1631553271329">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="947" y="456" key="FileChooserDialogImpl/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631553271329" />
     <state x="768" y="311" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1631517983314">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="768" y="311" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631517983314" />
-    <state x="823" y="333" key="run.anything.popup" timestamp="1631514270498">
+    <state x="823" y="333" key="run.anything.popup" timestamp="1631559926446">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="823" y="333" key="run.anything.popup/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631514270498" />
+    <state x="823" y="333" key="run.anything.popup/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631559926446" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/ui/photo/interfaces/photoPage/photoPageInterfaces.ts</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

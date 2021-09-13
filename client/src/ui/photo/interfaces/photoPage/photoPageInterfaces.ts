@@ -11,3 +11,11 @@ export type PhotoType = {
   path: string
 }
 
+type StrType = {
+  title: string
+}
+
+export type categoryType = {
+  StrType: PhotoType[]
+}
+

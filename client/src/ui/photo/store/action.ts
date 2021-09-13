@@ -3,6 +3,7 @@ import firebase from 'firebase/compat'
 
 import { UPDATE_PHOTOS_DATA } from './types'
 import { PhotoType } from '../interfaces/photoPage/photoPageInterfaces'
+import { loadPhotos, sendPhoto, sendUserData } from 'api/api'
 
 export type ActionsTypes = setPhotosType
 
@@ -16,12 +17,21 @@ export const setPhotos = (data: Array<PhotoType>): setPhotosType => ({
   data
 })
 
-export const fetchPhotos = (title: string) => async (dispatch: Dispatch<ActionsTypes>) => {
-  const base = firebase.firestore();
-  const homeDataRef = base.collection("photosData").doc(title)
-  const data = await homeDataRef.get()
+  export const fetchPhotos = (title: string) => async (dispatch: Dispatch<ActionsTypes>) => {
+  const response = await loadPhotos(title)
+  const data: PhotoType[] = await response.data[`${title}`]
+  dispatch(setPhotos(data))
+}
 
-  dispatch(setPhotos(data.data()?.[`${title}`]))
+export const updatePhotos = (title: string, data: object) => async (dispatch: Dispatch<ActionsTypes>) => {
+  await sendPhoto(title, data)
+  fetchPhotos(title)
+}
+
+export const updateUserRole = (token: string) => async (dispatch: Dispatch<ActionsTypes>) => {
+  const response = await sendUserData(token)
+  console.log(response.data)
+  // dispatch(writeCurrentUserData(response))
 }
 
 // export const addPost = (post: PostType, posts: PostType[]) => () => {

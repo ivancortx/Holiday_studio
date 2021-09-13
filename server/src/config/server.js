@@ -1,35 +1,26 @@
-const express = require('express')
-const cors = require('cors')
-const middleware = require('../middleware')
-const admin = require('../config/firebase-config')
 
-const app = express()
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const holidayStudioRoutes = require('../routes/routes');
+const middleware = require('../middleware/index')
 
-const port = 5000
+const app = express();
 
-const ofirebase = require("./setData")
-
-app.use(cors())
-
-app.use(middleware.decodeToken)
-
-app.get('/api/saveUser', (req, res) => {
-
-  return res.json({answer: 'Wait for writing to database'})
-})
-
-// admin.firestore().collection('users').doc('title').get({
-//   name: 'lolo'
+const PORT = 5000
+//
+// app.use(middleware.decodeToken)
+// app.get('/api/saveUser', (req, res) => {
+//
+//   return res.json({answer: 'Wait for writing to database'})
 // })
 
-app.listen(port,() => {
-  console.log(`server is running on port ${port}`)
-})
+app.use(express.json());
+app.use(cors());
+app.use(bodyParser.json());
+
+app.use('/api', holidayStudioRoutes.routes);
 
 
-app.post("/savedata/", function (req, res) {
-  console.log(res.body)
-  ofirebase.saveData(req.body, function(err, data) {
-    res.send(data)
-  })
-})
+
+app.listen(PORT, () => console.log('App is listening on url http://localhost:' + PORT));
