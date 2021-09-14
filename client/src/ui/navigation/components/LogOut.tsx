@@ -1,35 +1,45 @@
-import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-
-import { sendUserData } from 'api/api'
-import { updateUserRole } from '../../photo/store/action'
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 import styles from './LoginAndLogout.module.scss'
 
+import firebaseApp from '../../../firebase/firebase'
+import { AppStateType } from '../../../store'
+import { updateUserRole } from '../store/action'
+import firebase from 'firebase/compat'
 
 
 type Props = {
   auth: any
   setIsAuthorized: (arg: boolean) => void
-  token: string
 }
 
-export const LogOut: React.VFC<Props> = ({ auth, setIsAuthorized, token }) => {
+export const LogOut: React.VFC<Props> = ({ auth, setIsAuthorized }) => {
   const dispatch = useDispatch()
+  const userData = useSelector((state: AppStateType) => state.userData.userData)
+  const login = async () => {
+    await firebaseApp.auth().onAuthStateChanged((userCred) => {
+      if (userCred) {
+        userCred.getIdToken().then((token) => {
+          dispatch(updateUserRole(token))
+        })
+      }
+    })
+  }
+
+  useEffect(() => {
+    login()
+  }, [])
 
   const exit = () => {
     auth.signOut()
     setIsAuthorized(false)
+    localStorage.clear()
   }
-
-  useEffect(() => {
-    if (token) {
-      dispatch(updateUserRole(token))
-    }
-  }, [token])
 
   return (
     <div className={styles.container} onClick={exit}>
+      {userData[0] && <span>Вітаю, {userData[0].name} </span>}
       <span className={styles.btn}>LogOut</span>
     </div>
   )

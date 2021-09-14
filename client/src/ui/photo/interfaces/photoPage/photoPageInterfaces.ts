@@ -10,12 +10,3 @@ export type PhotoType = {
   image: any
   path: string
 }
-
-type StrType = {
-  title: string
-}
-
-export type categoryType = {
-  StrType: PhotoType[]
-}
-

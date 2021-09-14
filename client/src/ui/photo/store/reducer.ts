@@ -8,8 +8,8 @@ import { ActionsTypes } from './action'
 
 
 type InitialStateType = {
-  photoCategory: Array<PhotoCategoryType>
-  photoData: Array<PhotoType>
+  photoCategory: PhotoCategoryType[]
+  photoData: PhotoType[]
 }
 
 const initialState: InitialStateType = {
@@ -18,16 +18,7 @@ const initialState: InitialStateType = {
     {id: 2, name: 'День народження', image: birthday, title: 'birthday'},
     {id: 3, name: 'Віньєтка', image: vignette, title: 'vignette'}
   ],
-  photoData: [
-    // {id: 1, image: w1},
-    // {id: 2, image: w2},
-    // {id: 3, image: w3},
-    // {id: 4, image: w4},
-    // {id: 5, image: w5},
-    // {id: 6, image: w6},
-    // {id: 7, image: w7},
-    // {id: 8, image: w8}
-  ]
+  photoData: [],
 }
 
 export const reducer = (state = initialState, action: ActionsTypes): InitialStateType => {

@@ -22,15 +22,11 @@ export const PhotoByCategory: React.VFC = () => {
     dispatch(fetchPhotos(title))
   }, [title, dispatch])
 
-  const base = firebase.firestore();
   useEffect(() => {
-    base.collection("photosData").doc(title)
-      .onSnapshot((doc) => {
         dispatch(fetchPhotos(title))
-      })
-  }, [base, dispatch, title])
+  }, [dispatch, title])
 
-  const { photoData } = usePhotoPageHooks()
+  const { photoData, roles } = usePhotoPageHooks()
 
   const [openModal, setOpenModal] = useState<boolean>(false)
   const [fotoToModal, setFotoToModal] = useState<PhotoType>({id: '', image: '', path: ''} )
@@ -38,8 +34,9 @@ export const PhotoByCategory: React.VFC = () => {
   const photoHandler = (photo: PhotoType) => {
     setFotoToModal(photo)
     setOpenModal(true)
-
   }
+
+  const isAdmin = roles?.includes('admin', 0)
 
 
   const closeModal = () => {
@@ -49,8 +46,6 @@ export const PhotoByCategory: React.VFC = () => {
 
   return (
     photoData ?
-
-
       <div className={styles.container}>
 
         <div className={styles.title}>
@@ -66,11 +61,11 @@ export const PhotoByCategory: React.VFC = () => {
                         photo={fotoToModal}/>
               </div>}
               <div className={styles.link}>
-                <div className={styles.deletePhotoButton}>
+                {isAdmin && <div className={styles.deletePhotoButton}>
                   <DeletePhoto photo={photo}
                                photoData={photoData}
                                title={title}/>
-                </div>
+                </div>}
                 <div>
                   <img onClick={() => photoHandler(photo)} src={photo.image}/>
                 </div>
@@ -84,14 +79,14 @@ export const PhotoByCategory: React.VFC = () => {
           ))
           }
         </div>
-        <AddPhotoForm title={title}
-                      photoData={photoData}/>
+        {isAdmin && <AddPhotoForm title={title}
+                       photoData={photoData}/>}
       </div>
       :
       <div className={styles.empty}>
         Фотографії в даному розділі відсутні
-        <AddPhotoForm title={title}
-                      photoData={[]}/>
+        {isAdmin && <AddPhotoForm title={title}
+                                          photoData={photoData}/>}
       </div>
   )
 }

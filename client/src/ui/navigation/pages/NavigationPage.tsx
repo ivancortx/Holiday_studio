@@ -14,8 +14,13 @@ import logo from 'assets/images/logo.png'
 export const NavigationPage: React.VFC = () => {
 
   const [token, setToken] = useState('')
+
+
+
+
   const [isAuthorized, setIsAuthorized] = useState(false ||
     window.localStorage.getItem('auth') === 'true')
+
   const auth = firebaseApp.auth()
   const userIsAuth: any = useAuthState(auth)
 
@@ -28,13 +33,12 @@ export const NavigationPage: React.VFC = () => {
     <div className={styles.navContainer}>
       <div className={styles.logoAndLoginContainer}>
         <div className={styles.logo}>
-          <img src={logo}/>
+          <img src={logo} alt={'img'}/>
         </div>
         <div className={styles.authButton}>
           {userIsAuth[0] ?
             <LogOut auth={auth}
-                    setIsAuthorized={setIsAuthorized}
-                    token={token}/>
+                    setIsAuthorized={setIsAuthorized}/>
             :
             <Login auth={auth}
                    setToken={setToken}

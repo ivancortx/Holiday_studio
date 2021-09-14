@@ -5,9 +5,9 @@ const firestore = admin.firestore();
 
 const updatePhotos = async (req, res, next) => {
   try {
-    const data = req.body.body.data;
+    const data = req.body.data;
 
-    const title = req.body.body.title
+    const title = req.body.title
     await firestore.collection('photosData').doc(title).set(data);
     res.send('Photos saved successfuly');
   } catch (error) {
@@ -27,7 +27,7 @@ const fetchPhoto = async (req, res, next) => {
     } else {
       res.send(data.data());
     }
-
+    
   } catch (error) {
     res.status(400).send(error.message);
   }
@@ -35,10 +35,21 @@ const fetchPhoto = async (req, res, next) => {
 
 const saveUser = async (req, res, next) => {
   try {
-    const token = req.body.body.token
-    const decodeValue = await admin.auth().verifyIdToken(token)
+    const adminsQueryDocument = await firestore.collection("admins").doc('admins').get()
+    const admins = await adminsQueryDocument.data().emails
+    const token = req.body.token
+    const decodeValue= await admin.auth().verifyIdToken(token)
     const userId = decodeValue.uid
-    decodeValue["roles"] = "user"
+
+    admins.filter(item => {
+      if (item === decodeValue.email) {
+        decodeValue["roles"] = ["user", "admin"]
+      } else {
+        decodeValue["roles"] = ["user"]
+      }
+     return decodeValue
+    })
+
     await firestore.collection("usersData").doc(userId).set(decodeValue)
 
     return res.json(decodeValue)

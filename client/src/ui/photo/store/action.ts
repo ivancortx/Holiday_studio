@@ -1,18 +1,17 @@
 import { Dispatch } from 'react'
-import firebase from 'firebase/compat'
 
 import { UPDATE_PHOTOS_DATA } from './types'
 import { PhotoType } from '../interfaces/photoPage/photoPageInterfaces'
-import { loadPhotos, sendPhoto, sendUserData } from 'api/api'
+import { loadPhotos, sendPhoto } from 'api/api'
 
-export type ActionsTypes = setPhotosType
+export type ActionsTypes = SetPhotosType
 
-type setPhotosType = {
+type SetPhotosType = {
   type: typeof UPDATE_PHOTOS_DATA
   data: Array<PhotoType>
 }
 
-export const setPhotos = (data: Array<PhotoType>): setPhotosType => ({
+export const setPhotos = (data: Array<PhotoType>): SetPhotosType => ({
   type: UPDATE_PHOTOS_DATA,
   data
 })
@@ -28,11 +27,6 @@ export const updatePhotos = (title: string, data: object) => async (dispatch: Di
   fetchPhotos(title)
 }
 
-export const updateUserRole = (token: string) => async (dispatch: Dispatch<ActionsTypes>) => {
-  const response = await sendUserData(token)
-  console.log(response.data)
-  // dispatch(writeCurrentUserData(response))
-}
 
 // export const addPost = (post: PostType, posts: PostType[]) => () => {
 //   posts[posts.length] = post
