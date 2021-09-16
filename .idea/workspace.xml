@@ -20,23 +20,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db9c5f9-5a70-4017-8d80-a7eaa06a1fee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/middleware/fetchPhotoCheckRole.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/middleware/updatePhotoCheckRole.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/components/AddVideoForm.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/components/CategoryTranslator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/components/DeleteVideo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/components/Portal.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/components/Portal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoByCategory.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoByCategory.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoLinkItem.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoLinkItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/form/AddVideoForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/form/validate.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/hooks/useVideoPageHooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/intarfaces/videoPage/videoPageInterfaces.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/pages/VideoPage/VideoPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/pages/VideoPage/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/store/action.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/store/reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/video/store/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/DeletePhoto.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/DeletePhoto.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/store/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/store/action.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/wedding/DSC02296.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/home/pages/homePage/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/home/pages/homePage/HomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/AppRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/AppRoutes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/LogOut.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/LogOut.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/const/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/const/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavigationPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavigationPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/controllers/holidayStudioController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/holidayStudioController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/middleware/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/middleware/updatePhotoCheckRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/middleware/updateContentCheckRole.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,19 +94,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/Study/react/social_network_typescript" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/ui/video/form" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\photo\hooks" />
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\navigation" />
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client" />
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\video\form" />
       <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\server" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\video\form" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\video\store" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\video\components" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\video\hooks" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\video\intarfaces\videoPage" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -86,7 +126,9 @@
       <workItem from="1631465170201" duration="36381000" />
       <workItem from="1631640606830" duration="13818000" />
       <workItem from="1631733333510" duration="724000" />
-      <workItem from="1631734072646" duration="19501000" />
+      <workItem from="1631734072646" duration="20164000" />
+      <workItem from="1631810809280" duration="1251000" />
+      <workItem from="1631812960268" duration="13614000" />
     </task>
     <servers />
   </component>
@@ -114,6 +156,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="935" y="503" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631549061106" />
+    <state x="927" y="457" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631828268543">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="927" y="457" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631828268543" />
     <state x="947" y="456" key="FileChooserDialogImpl" timestamp="1631779182197">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -130,5 +176,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="823" y="333" key="run.anything.popup/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631559926446" />
+    <state x="860" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1631823155384">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="860" y="329" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631823155384" />
   </component>
 </project>

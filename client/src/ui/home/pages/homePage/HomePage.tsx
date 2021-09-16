@@ -6,14 +6,14 @@ import service from 'assets/images/Home page/service.jpg'
 
 import styles from './HomePage.module.scss'
 import { Link } from 'react-router-dom'
-import { publicRoutes } from '../../../navigation/const/routes'
+import { Routes } from '../../../navigation/const/routes'
 
 export const HomePage: React.VFC = () => {
 
   return (
     <div className={styles.container}>
       <div className={styles.linksBlock}>
-        <Link to={publicRoutes.PhotoPage}>
+        <Link to={Routes.PhotoPage}>
           <div className={styles.link}>
             <div>
               <img src={foto} alt={'photo'}/>
@@ -25,17 +25,17 @@ export const HomePage: React.VFC = () => {
             </div>
           </div>
         </Link>
-        <Link to={publicRoutes.PhotoPage}>
+        <Link to={Routes.VideoPage}>
           <div className={styles.link}>
             <div>
-              <img src={kino} alt={'kino'}/>
+              <img src={kino} alt={'video'}/>
             </div>
             <div className={styles.linkText}>
-              Кіно
+              Відео
             </div>
           </div>
         </Link>
-        <Link to={publicRoutes.PhotoPage}>
+        <Link to={Routes.PhotoPage}>
           <div className={styles.link}>
             <div>
               <img src={service} alt={'service'}/>

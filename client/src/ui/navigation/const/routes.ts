@@ -1,27 +1,18 @@
-type PublicRoutesType = {
+type RoutesType = {
   Home: string
   PhotoPage: string
   PhotoPageCategory: string
   ReviewsPage: string
+  VideoPage: string
+  VideoPageCategory: string
 }
 
-type PrivateRoutesType = {
-  Settings: string
-  PhotoPage: string
-  PhotoPageCategory: string
-  ReviewsPage: string
-}
-
-export const publicRoutes: PublicRoutesType = {
+export const Routes: RoutesType = {
   Home: '/',
   PhotoPage: '/photo',
   PhotoPageCategory: '/photo/:title?',
-  ReviewsPage: '/reviews'
+  ReviewsPage: '/reviews',
+  VideoPage: '/video',
+  VideoPageCategory: '/video/:title?'
 }
 
-export const privateRoutes: PrivateRoutesType = {
-  Settings: '/settings',
-  PhotoPage: '/photo',
-  PhotoPageCategory: '/photo/:title?',
-  ReviewsPage: '/reviews'
-}

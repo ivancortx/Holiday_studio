@@ -1,5 +1,4 @@
 import axios from 'axios'
-import Cookies from 'js-cookie'
 
 const instance = axios.create({
   baseURL: "http://localhost:5000/",
@@ -8,16 +7,30 @@ const instance = axios.create({
 export const loadPhotos = (title: string, token: string) => {
   return instance.get(`api/fetch-photo/${title}`, {
     headers: {
-      'Token': token,
-      "CSRF-Token": Cookies.get("XSRF-TOKEN")
+      'Token': token
     }
   })
 }
 
-
-
 export const sendPhoto = (title: string, data: object, token: string) => {
   return instance.post(`api/add-photo`, {
+    title,
+    data,
+    token
+  })
+
+}
+
+export const loadVideos = (title: string, token: string) => {
+  return instance.get(`api/fetch-video/${title}`, {
+    headers: {
+      'Token': token
+    }
+  })
+}
+
+export const sendVideo = (title: string, data: object, token: string) => {
+  return instance.post(`api/add-video`, {
     title,
     data,
     token

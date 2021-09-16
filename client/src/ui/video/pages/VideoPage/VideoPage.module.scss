@@ -1,0 +1,16 @@
+.container {
+  margin: 0 auto 40px;
+  width: 80%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.linksBlock {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 2%;
+}

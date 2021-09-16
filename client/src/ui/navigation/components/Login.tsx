@@ -15,9 +15,9 @@ export const Login: React.VFC<Props> = ({ auth, setToken, setIsAuthorized }) => 
   const login = async () => {
     const provider = new firebase.auth.GoogleAuthProvider()
     await auth.signInWithPopup(provider)
-    await firebaseApp.auth().onAuthStateChanged((userCred) => {
-      if (userCred) {
-        userCred.getIdToken().then((token) => {
+    await firebaseApp.auth().onAuthStateChanged((user) => {
+      if (user) {
+        user.getIdToken().then((token) => {
           setToken(token)
           setIsAuthorized(true)
         })

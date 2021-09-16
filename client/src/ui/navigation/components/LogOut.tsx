@@ -18,9 +18,10 @@ export const LogOut: React.VFC<Props> = ({ auth, setIsAuthorized }) => {
   const dispatch = useDispatch()
   const userData = useSelector((state: AppStateType) => state.userData.userData)
   const login = async () => {
-    await firebaseApp.auth().onAuthStateChanged((userCred) => {
-      if (userCred) {
-        userCred.getIdToken().then((token) => {
+    await firebaseApp.auth().onAuthStateChanged((user) => {
+      if (user) {
+        user.getIdToken().then((token) => {
+          // const csrfToken = getCookie('csrfToken')
           dispatch(updateUserRole(token))
         })
       }

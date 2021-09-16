@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuthState } from 'react-firebase-hooks/auth'
 
-import { privateRoutes, publicRoutes } from '../const/routes'
+import { Routes } from '../const/routes'
 import { Login } from '../components/Login'
 import { LogOut } from '../components/LogOut'
 
@@ -14,8 +14,6 @@ import logo from 'assets/images/logo.png'
 export const NavigationPage: React.VFC = () => {
 
   const [token, setToken] = useState('')
-
-
 
 
   const [isAuthorized, setIsAuthorized] = useState(false ||
@@ -43,30 +41,26 @@ export const NavigationPage: React.VFC = () => {
             <Login auth={auth}
                    setToken={setToken}
                    setIsAuthorized={setIsAuthorized}
-                   />
+            />
           }
         </div>
       </div>
-
       <div className={styles.navButtonsContainer}>
         <div className={styles.button}>
-          <Link to={publicRoutes.Home}><Button text={'Головна'}/></Link>
+          <Link to={Routes.Home}><Button text={'Головна'}/></Link>
         </div>
         <div className={styles.button}>
-          <Link to={publicRoutes.PhotoPage}><Button text={'Кіно'}/></Link>
+          <Link to={Routes.PhotoPage}><Button text={'Фото'}/></Link>
         </div>
         <div className={styles.button}>
-          <Link to={publicRoutes.PhotoPage}><Button text={'Фото'}/></Link>
+          <Link to={Routes.VideoPage}><Button text={'Відео'}/></Link>
         </div>
         <div className={styles.button}>
-          <Link to={publicRoutes.PhotoPage}><Button text={'Послуги'}/></Link>
+          <Link to={Routes.PhotoPage}><Button text={'Послуги'}/></Link>
         </div>
         <div className={styles.button}>
-          <Link to={publicRoutes.ReviewsPage}><Button text={'Відгуки'}/></Link>
+          <Link to={Routes.ReviewsPage}><Button text={'Відгуки'}/></Link>
         </div>
-        {/*{userIsAuth[0] && <div className={styles.button}>*/}
-        {/*  <Link to={privateRoutes.Settings}>Админка</Link>*/}
-        {/*</div>}*/}
       </div>
 
     </div>
