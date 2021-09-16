@@ -27,7 +27,7 @@ const fetchPhoto = async (req, res, next) => {
     } else {
       res.send(data.data());
     }
-    
+
   } catch (error) {
     res.status(400).send(error.message);
   }
@@ -36,13 +36,13 @@ const fetchPhoto = async (req, res, next) => {
 const saveUser = async (req, res, next) => {
   try {
     const adminsQueryDocument = await firestore.collection("admins").doc('admins').get()
-    const admins = await adminsQueryDocument.data().emails
+    const admins = await adminsQueryDocument.data().admin
     const token = req.body.token
     const decodeValue= await admin.auth().verifyIdToken(token)
     const userId = decodeValue.uid
 
     admins.filter(item => {
-      if (item === decodeValue.email) {
+      if (item.email === decodeValue.email) {
         decodeValue["roles"] = ["user", "admin"]
       } else {
         decodeValue["roles"] = ["user"]

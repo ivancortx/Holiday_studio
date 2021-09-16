@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import shortid from 'shortid'
 import firebaseApp from '../../../firebase/firebase'
@@ -18,7 +18,22 @@ export const AddPhotoForm: React.VFC<Props> = ({title, photoData}) => {
   const [fileUrl, setFileUrl] = useState<string>('')
   const [filePath, setFilePath] = useState<string>('')
   const [isUploaded, setIsUploaded] = useState(false)
+  const [token, setToken] = useState('')
   const dispatch = useDispatch()
+
+  const fetchToken = async () => {
+    await firebaseApp.auth().onAuthStateChanged((userCred) => {
+      if (userCred) {
+        userCred.getIdToken().then((tokenId) => {
+          setToken(tokenId)
+        })
+      }
+    })
+  }
+
+  useEffect(() => {
+    fetchToken()
+  }, [])
 
 
   const saveFile = async (e: any) => {
@@ -47,8 +62,7 @@ export const AddPhotoForm: React.VFC<Props> = ({title, photoData}) => {
     })
 
     const photoObject: object = { [`${title}`]: photoData }
-    dispatch(updatePhotos(title, photoObject))
-
+    dispatch(updatePhotos(title, photoObject, token))
     setIsUploaded(false)
   }
 

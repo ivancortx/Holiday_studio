@@ -16,15 +16,15 @@ export const setPhotos = (data: Array<PhotoType>): SetPhotosType => ({
   data
 })
 
-  export const fetchPhotos = (title: string) => async (dispatch: Dispatch<ActionsTypes>) => {
-  const response = await loadPhotos(title)
+  export const fetchPhotos = (title: string, token: string) => async (dispatch: Dispatch<ActionsTypes>) => {
+  const response = await loadPhotos(title, token)
   const data: PhotoType[] = await response.data[`${title}`]
   dispatch(setPhotos(data))
 }
 
-export const updatePhotos = (title: string, data: object) => async (dispatch: Dispatch<ActionsTypes>) => {
-  await sendPhoto(title, data)
-  fetchPhotos(title)
+export const updatePhotos = (title: string, data: object, token: string) => async (dispatch: Dispatch<ActionsTypes>) => {
+  await sendPhoto(title, data, token)
+  fetchPhotos(title, token)
 }
 
 

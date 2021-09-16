@@ -11,20 +11,30 @@ import { CategoryTranslator } from './CategoryTranslator'
 import { DeletePhoto } from './DeletePhoto'
 import { Portal } from './Portal'
 import { PhotoType } from '../interfaces/photoPage/photoPageInterfaces'
+import firebaseApp from '../../../firebase/firebase'
 
 
 export const PhotoByCategory: React.VFC = () => {
+  const dispatch = useDispatch()
 
   const { title } = useParams<{ title: string }>();
 
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(fetchPhotos(title))
-  }, [title, dispatch])
+  const [token, setToken] = useState('')
+
+  const fetchToken = async () => {
+    await firebaseApp.auth().onAuthStateChanged((userCred) => {
+      if (userCred) {
+        userCred.getIdToken().then((tokenId) => {
+             setToken(tokenId)
+          dispatch(fetchPhotos(title, tokenId))
+        })
+      }
+    })
+  }
 
   useEffect(() => {
-        dispatch(fetchPhotos(title))
-  }, [dispatch, title])
+    fetchToken()
+  }, [])
 
   const { photoData, roles } = usePhotoPageHooks()
 
@@ -37,7 +47,6 @@ export const PhotoByCategory: React.VFC = () => {
   }
 
   const isAdmin = roles?.includes('admin', 0)
-
 
   const closeModal = () => {
     setOpenModal(false)
@@ -79,7 +88,7 @@ export const PhotoByCategory: React.VFC = () => {
           ))
           }
         </div>
-        {isAdmin && <AddPhotoForm title={title}
+        {true && <AddPhotoForm title={title}
                        photoData={photoData}/>}
       </div>
       :

@@ -1,20 +1,32 @@
 import axios from 'axios'
+import Cookies from 'js-cookie'
 
 const instance = axios.create({
-  baseURL: "http://localhost:5000/"
+  baseURL: "http://localhost:5000/",
 })
 
-export const loadPhotos = (title: string) => instance.get(`api/fetch-photo/${title}`)
-
-export const sendPhoto = (title: string, data: object) => {
-  return instance.post(`api/add-photo`, {
-      title,
-      data
+export const loadPhotos = (title: string, token: string) => {
+  return instance.get(`api/fetch-photo/${title}`, {
+    headers: {
+      'Token': token,
+      "CSRF-Token": Cookies.get("XSRF-TOKEN")
+    }
   })
 }
 
+
+
+export const sendPhoto = (title: string, data: object, token: string) => {
+  return instance.post(`api/add-photo`, {
+    title,
+    data,
+    token
+  })
+
+}
+
 export const sendUserData = async (token: string) => {
-  return  axios.post('http://localhost:5000/api/save-user', {
-     token
+  return axios.post('http://localhost:5000/api/save-user', {
+    token
   })
 }
