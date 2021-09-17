@@ -1,14 +1,16 @@
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 
-import {reducer as photoCategoryReducer} from 'ui/photo/store/reducer'
-import {reducer as videoCategoryReducer} from 'ui/video/store/reducer'
+import {reducer as photoCategoryReducer} from 'ui/photo'
+import {reducer as videoCategoryReducer} from 'ui/video'
 import {reducer as userDataReducer} from 'ui/navigation'
+import {reducer as reviewsDataReducer} from 'ui/review'
 
 let reducers = combineReducers({
   photoCategoryData: photoCategoryReducer,
   videoCategoryData: videoCategoryReducer,
-  userData: userDataReducer
+  userData: userDataReducer,
+  reviewsData: reviewsDataReducer
 })
 
 type RootReducerType = typeof reducers

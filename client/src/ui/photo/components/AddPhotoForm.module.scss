@@ -11,6 +11,17 @@
   margin-left: 15%;
 }
 
-.formBlock {
+@media screen and (max-width: 680px) {
+  .container {
+    margin: 20px auto 0;
+    width: 100%;
+    text-align: center;
+  }
 
+  .form {
+    width: 100%;
+    min-width: 400px;
+    text-align: center;
+    margin-left: 0;
+  }
 }

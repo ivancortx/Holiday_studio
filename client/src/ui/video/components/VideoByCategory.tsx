@@ -65,7 +65,7 @@ export const VideoByCategory: React.VFC = () => {
                                videoData={videoData}
                                title={title}/>
                 </div>}
-                <iframe width="600" height="415" src={video.videoUrl} title="YouTube video player"
+                <iframe className={styles.video} src={video.videoUrl} title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen></iframe>
@@ -85,5 +85,3 @@ export const VideoByCategory: React.VFC = () => {
       </div>
   )
 }
-
-

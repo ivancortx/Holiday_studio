@@ -1,12 +1,12 @@
 .container {
   font-size: 0.8em;
+  width: 100%;
 }
-
 
 .btn {
   cursor: pointer;
   vertical-align: center;
-   color: #232323;
+  color: #232323;
   text-decoration: none;
   transition: color 0.4s linear;
 }
@@ -21,4 +21,9 @@
 
 .btn span.activeLink {
   color: #959595;
+}
+
+.nameUser {
+  font-style: italic;
+  color: #1515a8;
 }

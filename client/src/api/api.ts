@@ -43,3 +43,14 @@ export const sendUserData = async (token: string) => {
     token
   })
 }
+
+export const loadReviews = () => {
+  return instance.get(`api/fetch-reviews`)
+}
+
+export const sendReview = (data: object, token: string) => {
+  return instance.post(`api/add-review`, {
+    data,
+    token
+  })
+}

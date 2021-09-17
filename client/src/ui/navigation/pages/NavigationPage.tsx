@@ -56,7 +56,7 @@ export const NavigationPage: React.VFC = () => {
           <Link to={Routes.VideoPage}><Button text={'Відео'}/></Link>
         </div>
         <div className={styles.button}>
-          <Link to={Routes.PhotoPage}><Button text={'Послуги'}/></Link>
+          <Link to={Routes.ServicesPage}><Button text={'Послуги'}/></Link>
         </div>
         <div className={styles.button}>
           <Link to={Routes.ReviewsPage}><Button text={'Відгуки'}/></Link>

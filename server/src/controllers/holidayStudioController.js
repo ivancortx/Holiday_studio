@@ -87,10 +87,39 @@ const saveUser = async (req, res, next) => {
   }
 }
 
+const fetchReviews = async (req, res) => {
+  try {
+    const collection = await firestore.collection("reviewsData").doc('reviews')
+    const data = await collection.get()
+
+    if (!data.exists) {
+      res.status(404).send('Reviews not found');
+    } else {
+      res.send(data.data());
+    }
+
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+}
+
+const updateReviews = async (req, res) => {
+  try {
+    const data = req.body.data;
+    console.log(data)
+    await firestore.collection('reviewsData').doc('reviews').set(data);
+    res.send('Reviews saved successfuly');
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+}
+
 module.exports = {
   updatePhotos,
   fetchPhoto,
   updateVideos,
   fetchVideo,
-  saveUser
+  saveUser,
+  fetchReviews,
+  updateReviews
 }

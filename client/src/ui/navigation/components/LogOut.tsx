@@ -6,8 +6,6 @@ import styles from './LoginAndLogout.module.scss'
 import firebaseApp from '../../../firebase/firebase'
 import { AppStateType } from '../../../store'
 import { updateUserRole } from '../store/action'
-import firebase from 'firebase/compat'
-
 
 type Props = {
   auth: any
@@ -21,7 +19,6 @@ export const LogOut: React.VFC<Props> = ({ auth, setIsAuthorized }) => {
     await firebaseApp.auth().onAuthStateChanged((user) => {
       if (user) {
         user.getIdToken().then((token) => {
-          // const csrfToken = getCookie('csrfToken')
           dispatch(updateUserRole(token))
         })
       }
@@ -39,9 +36,9 @@ export const LogOut: React.VFC<Props> = ({ auth, setIsAuthorized }) => {
   }
 
   return (
-    <div className={styles.container} onClick={exit}>
-      {userData[0] && <span>Вітаю, {userData[0].name} </span>}
-      <span className={styles.btn}>LogOut</span>
+    <div className={styles.container} >
+      {userData[0] && <span className={styles.nameUser}>{userData[0].name}, </span>}
+      <span onClick={exit} className={styles.btn}>Вийти</span>
     </div>
   )
 }

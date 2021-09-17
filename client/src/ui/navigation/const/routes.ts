@@ -5,6 +5,7 @@ type RoutesType = {
   ReviewsPage: string
   VideoPage: string
   VideoPageCategory: string
+  ServicesPage: string
 }
 
 export const Routes: RoutesType = {
@@ -13,6 +14,7 @@ export const Routes: RoutesType = {
   PhotoPageCategory: '/photo/:title?',
   ReviewsPage: '/reviews',
   VideoPage: '/video',
-  VideoPageCategory: '/video/:title?'
+  VideoPageCategory: '/video/:title?',
+  ServicesPage: '/services'
 }
 

@@ -52,3 +52,60 @@
   font-size: 0.6em;
   color: #8e8e8e;
 }
+
+@media screen and (max-width: 680px) {
+  .container {
+    width: 100%;
+    margin: 7vh auto 0;
+    height: 100%;
+  }
+
+  .container:before {
+    text-align: center;
+    display: none;
+    content: "";
+    width: 60%;
+    background-color: #8e8e8e;
+    height: 1px;
+    margin-left: 20%;
+    margin-bottom: 0;
+  }
+
+  .contactsBlock {
+    margin: 0 auto 15px;
+    width: 82%;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .contactsItem {
+    display: none;
+  }
+
+  .contactsItem a{
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #8e8e8e;
+  }
+
+  .contactsItem a:hover {
+    color: greenyellow;
+  }
+
+  .messengers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .messengers img {
+    width: 35px;
+    margin: 5vh 2vw 0;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 0.6em;
+    color: #8e8e8e;
+  }
+}

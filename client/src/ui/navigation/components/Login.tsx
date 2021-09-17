@@ -27,7 +27,7 @@ export const Login: React.VFC<Props> = ({ auth, setToken, setIsAuthorized }) => 
 
   return (
     <div className={styles.container} onClick={login}>
-      <span className={styles.btn}>Login</span>
+      <span className={styles.btn}>Ввійти</span>
     </div>
   )
 }

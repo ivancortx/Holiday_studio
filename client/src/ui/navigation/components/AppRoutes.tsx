@@ -7,6 +7,7 @@ import { ReviewsPage } from '../../review/pages/ReviewsPage/ReviewsPage'
 import { VideoPage } from '../../video/pages/VideoPage'
 import { VideoByCategory } from '../../video/components/VideoByCategory'
 import { Routes } from '../const/routes'
+import { ServicesPage } from '../../services/pages'
 
 
 export const AppRoutes: React.VFC = () => {
@@ -17,6 +18,7 @@ export const AppRoutes: React.VFC = () => {
     <Route path={Routes.VideoPage} exact component={VideoPage}/>
     <Route path={Routes.VideoPageCategory} exact component={VideoByCategory}/>
     <Route path={Routes.ReviewsPage} exact component={ReviewsPage}/>
+    <Route path={Routes.ServicesPage} exact component={ServicesPage}/>
     <Redirect to={Routes.Home}/>
   </Switch>
 }

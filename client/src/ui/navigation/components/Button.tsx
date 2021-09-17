@@ -7,8 +7,10 @@ type Props = {
 
 export const Button: React.VFC<Props> = ({text}) => {
   return (
-    <div className="buttons">
-      <div className={styles.btnContainer}><span className={styles.btn}>{text}</span></div>
-    </div>
+   <div className={styles.container}>
+     <div className="buttons">
+       <div className={styles.btnContainer}><span className={styles.btn}>{text}</span></div>
+     </div>
+   </div>
   )
 }
