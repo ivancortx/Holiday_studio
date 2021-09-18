@@ -10,7 +10,6 @@ import { ReviewType } from '../interfaces/reviewPage/reviewPageInterfaces'
 import { UserDataType } from 'ui/navigation/interfaces/navigationPage/navigationPageInterfaces'
 
 import styles from './AddReviewForm.module.scss'
-import { sendReview } from '../../../api/api'
 
 type Props = {
   reviewsData: ReviewType[]

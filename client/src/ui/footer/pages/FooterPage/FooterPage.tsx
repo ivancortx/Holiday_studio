@@ -24,7 +24,7 @@ export const FooterPage: React.VFC = () => {
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="https://www.youtube.com/channel/UCILy7xYLKmYfCGZGEIXDAPw">
               <img className={styles.icon} src={youtube} alt='youtube'/>
             </a>
           </div>

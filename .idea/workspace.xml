@@ -21,14 +21,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8db9c5f9-5a70-4017-8d80-a7eaa06a1fee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/store/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/store/action.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/school.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/images/PhotoPage/school.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/VideoPage/birthday.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/images/VideoPage/birthday.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/VideoPage/christening.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/images/VideoPage/christening.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/VideoPage/graduatesCeremony.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/images/VideoPage/graduatesCeremony.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/VideoPage/wedding.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/images/VideoPage/wedding.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/footer/pages/FooterPage/FooterPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/footer/pages/FooterPage/FooterPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/Button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/Button.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/ui/photo/store/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/store/reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/store/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/store/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/ui/review/form/AddReviewForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/form/AddReviewForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/review/store/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/store/action.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/shared/useShared.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/shared/useShared.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/store/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/store/action.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,7 @@
       <workItem from="1631733333510" duration="724000" />
       <workItem from="1631734072646" duration="20164000" />
       <workItem from="1631810809280" duration="1251000" />
-      <workItem from="1631812960268" duration="55143000" />
+      <workItem from="1631812960268" duration="58933000" />
     </task>
     <servers />
   </component>
