@@ -22,7 +22,6 @@ export const fetchReviews = () => async (dispatch: Dispatch<ActionsTypes>) => {
   dispatch(setReview(data))
 }
 
-export const updateReviews = (data: object, token: string) => async (dispatch: Dispatch<ActionsTypes>) => {
+export const updateReviews = (data: object, token: string) => async () => {
   await sendReview(data, token)
-  fetchReviews()
 }

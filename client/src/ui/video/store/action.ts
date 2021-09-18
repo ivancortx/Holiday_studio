@@ -16,13 +16,13 @@ export const SetVideos = (data: Array<VideoType>): SetVideosType => ({
   data
 })
 
-  export const fetchVideos = (title: string, token: string) => async (dispatch: Dispatch<ActionsTypes>) => {
-  const response = await loadVideos(title, token)
+export const fetchVideos = (title: string) => async (dispatch: Dispatch<ActionsTypes>) => {
+  const response = await loadVideos(title)
   const data: VideoType[] = await response.data[`${title}`]
   dispatch(SetVideos(data))
 }
 
 export const updateVideos = (title: string, data: object, token: string) => async (dispatch: Dispatch<ActionsTypes>) => {
   await sendVideo(title, data, token)
-  fetchVideos(title, token)
+  fetchVideos(title)
 }

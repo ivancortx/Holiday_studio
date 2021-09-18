@@ -1,46 +1,46 @@
 import axios from 'axios'
 
 const instance = axios.create({
-  baseURL: "http://localhost:5000/",
+  baseURL: process.env.REACT_APP_API_URL
 })
 
-export const loadPhotos = (title: string, token: string) => {
-  return instance.get(`api/fetch-photo/${title}`, {
-    headers: {
-      'Token': token
-    }
-  })
+export const loadPhotos = (title: string) => {
+  return instance.get(`api/fetch-photo/${title}`)
 }
 
 export const sendPhoto = (title: string, data: object, token: string) => {
   return instance.post(`api/add-photo`, {
-    title,
-    data,
-    token
-  })
-
+      title,
+      data
+    },
+    {
+      headers: {
+        'Token': token
+      }
+    })
 }
 
-export const loadVideos = (title: string, token: string) => {
-  return instance.get(`api/fetch-video/${title}`, {
-    headers: {
-      'Token': token
-    }
-  })
+export const loadVideos = (title: string) => {
+  return instance.get(`api/fetch-video/${title}`)
 }
 
 export const sendVideo = (title: string, data: object, token: string) => {
   return instance.post(`api/add-video`, {
-    title,
-    data,
-    token
-  })
-
+      title,
+      data
+    },
+    {
+      headers: {
+        'Token': token
+      }
+    })
 }
 
 export const sendUserData = async (token: string) => {
-  return axios.post('http://localhost:5000/api/save-user', {
-    token
+  return instance.post('api/save-user',{}, {
+    headers: {
+      'Token': token
+    }
   })
 }
 
@@ -50,7 +50,11 @@ export const loadReviews = () => {
 
 export const sendReview = (data: object, token: string) => {
   return instance.post(`api/add-review`, {
-    data,
-    token
-  })
+    data
+  },
+    {
+      headers: {
+        'Token': token
+      }
+    })
 }

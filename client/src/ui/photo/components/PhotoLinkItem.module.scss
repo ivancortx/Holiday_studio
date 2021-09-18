@@ -1,26 +1,24 @@
 .link {
-  cursor: pointer;
-}
-
-.link img{
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
-
-.link img:hover{
-  opacity: .7;
-}
-
-.linkText {
   text-align: center;
-}
-
-.linkText a{
   text-decoration: none;
+  cursor: pointer;
   color: #212121;
-}
+  transition: all 0.4s;
 
-.linkText a:hover {
-  color: gray;
+  &:hover {
+    span {
+      color: gray;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.4s;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
 }

@@ -1,12 +1,10 @@
 import React from 'react'
 import { Reviews } from '../../components/Reviews'
 
-export const ReviewsPage: React.VFC = () => {
+import styles from './ReviewPage.module.scss'
 
-
-  return (
-    <div>
-      <Reviews/>
-    </div>
-  )
-}
+export const ReviewsPage: React.VFC = () => (
+  <div className={styles.container}>
+    <Reviews/>
+  </div>
+)

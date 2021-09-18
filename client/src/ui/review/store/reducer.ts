@@ -1,8 +1,6 @@
 import { ReviewType } from '../interfaces/reviewPage/reviewPageInterfaces'
-
 import { UPDATE_REVIEWS_DATA } from './types'
 import { ActionsTypes } from './action'
-
 
 type InitialStateType = {
   reviewsData: ReviewType[]

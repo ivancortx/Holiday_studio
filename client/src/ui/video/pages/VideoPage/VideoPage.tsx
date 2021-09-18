@@ -1,8 +1,9 @@
 import React from 'react'
 
-import styles from './VideoPage.module.scss'
 import { useVideoPageHooks } from '../../hooks/useVideoPageHooks'
 import { VideoLinkItem } from '../../components/VideoLinkItem'
+
+import styles from './VideoPage.module.scss'
 
 export const VideoPage: React.VFC = () => {
   const { videoCategories } = useVideoPageHooks()

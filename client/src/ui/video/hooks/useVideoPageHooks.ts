@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import { AppStateType } from '../../../store'
+import { AppStateType } from 'store'
 
 export const useVideoPageHooks = () => {
   const videoCategories = useSelector((state: AppStateType) => state.videoCategoryData.videoCategory)

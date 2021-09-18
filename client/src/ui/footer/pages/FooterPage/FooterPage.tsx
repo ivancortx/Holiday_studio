@@ -7,13 +7,12 @@ import twitter from 'assets/images/social_icons/twitter.png'
 
 import styles from './FooterPage.module.scss'
 
-
 export const FooterPage: React.VFC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.contactsBlock}>
         <div className={styles.contactsItem}>
-          <a href="tel:77777777777">+7 777 777 77 77</a>
+          <a href="tel:+380674052889">(067)-405-28-89, Олександр</a>
         </div>
         <div className={styles.contactsItem}>
           <a href="mailto:test@gmail.com">test@gmail.com</a>

@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import shortid from 'shortid'
-import firebaseApp from '../../../firebase/firebase'
-
 import { useDispatch } from 'react-redux'
-import { updateReviews } from '../store/action'
+import shortid from 'shortid'
 import { Field, Form, Formik } from 'formik'
+
+import firebaseApp from 'firebase/firebase'
+import { updateReviews } from '../store/action'
 import { validate } from './validate'
+import { ReviewType } from '../interfaces/reviewPage/reviewPageInterfaces'
+import { UserDataType } from 'ui/navigation/interfaces/navigationPage/navigationPageInterfaces'
 
 import styles from './AddReviewForm.module.scss'
-import { ReviewType } from '../interfaces/reviewPage/reviewPageInterfaces'
-import { UserDataType } from '../../navigation/interfaces/navigationPage/navigationPageInterfaces'
 
 type Props = {
   reviewsData: ReviewType[]
@@ -17,7 +17,6 @@ type Props = {
 }
 
 export const AddReviewForm: React.VFC<Props> = ({ reviewsData, userData }) => {
-
   const [token, setToken] = useState('')
   const dispatch = useDispatch()
 
@@ -48,14 +47,13 @@ export const AddReviewForm: React.VFC<Props> = ({ reviewsData, userData }) => {
           author: userData[0].name,
           text: values.text
         })
-        const reviewsObject: object = { ['reviews']: reviewsData }
+        const reviewsObject: object = { 'reviews': reviewsData }
         dispatch(updateReviews(reviewsObject, token))
       }}>
       <div className={styles.container}>
         <h4>Напишіть відгук</h4>
         <Form className={styles.form}>
-          <label htmlFor="text" className="form-label">URL адрес:</label>
-          <Field className="form-control" id="text" name="text" placeholder="Введіть відгук"/>
+          <Field component="textarea" className="form-control" id="text" name="text" placeholder="Введіть відгук"/>
           <button type='submit' className="btn btn-success">Написати</button>
         </Form>
       </div>

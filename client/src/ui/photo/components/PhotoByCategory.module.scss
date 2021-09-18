@@ -66,8 +66,6 @@
 @media screen and (max-width: 680px) {
   .container {
     margin: 0 auto 0;
-    width: 100%;
-    z-index: 2;
 
     &:after {
       text-align: center;
@@ -81,12 +79,7 @@
     }
   }
 
-  .portal {
-    z-index: 1;
-  }
-
   .title {
-    text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
 
@@ -103,53 +96,22 @@
   }
 
   .linksBlock {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-gap: 1%;
+    display: block;
   }
 
   .link {
+    margin-top: 1vh;
     cursor: pointer;
   }
 
   .link img {
-    width: 100%;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-
     &:hover {
       opacity: 1;
     }
   }
 
-  .linkText {
-    text-align: center;
-  }
-
-  .linkText a {
-    text-decoration: none;
-    color: #212121;
-  }
-
-  .linkText a:hover {
-    color: gray;
-  }
-
-  .empty {
-    text-align: center;
-  }
-
   .deletePhotoButton {
     width: 4.5%;
-    margin: 0.5%;
-    position: absolute;
-    text-align: left;
-    z-index: 2;
-
-
-    img {
-      box-shadow: none;
-    }
   }
 }
 

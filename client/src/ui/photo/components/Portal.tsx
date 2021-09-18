@@ -1,8 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import styles from './Portal.module.scss'
+
 import { PhotoType } from '../interfaces/photoPage/photoPageInterfaces'
 import close from 'assets/images/closeModal.png'
+
+import styles from './Portal.module.scss'
 
 type Props = {
   openModal: boolean
@@ -16,7 +18,7 @@ export const Portal: React.VFC<Props> = ({ openModal, closeModal, photo }) => {
   return ReactDOM.createPortal(
     <div  className={styles.container}>
       <div className={styles.image}>
-        <img onClick={closeModal} src={photo.image} alt={'image'}/>
+        <img onClick={closeModal} src={photo.image} alt={'img'}/>
         <div className={styles.button} >
           <img className={styles.closeBtn} onClick={closeModal} src={close} alt={'close'}/>
         </div>

@@ -4,10 +4,6 @@
   z-index: 2;
 }
 
-.portal {
-  z-index: 1;
-}
-
 .title {
   text-align: center;
   margin-bottom: 20px;
@@ -74,8 +70,6 @@
 @media screen and (max-width: 680px) {
   .container {
     margin: 40px auto 0;
-    width: 100%;
-    z-index: 2;
 
     &:after {
       text-align: center;
@@ -90,10 +84,7 @@
   }
 
   .title {
-    text-align: center;
-    margin-bottom: 20px;
-
-    &:before {
+   &:before {
       text-align: center;
       display: block;
       content: "";

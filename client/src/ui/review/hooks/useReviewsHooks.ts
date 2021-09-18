@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import { AppStateType } from '../../../store'
+import { AppStateType } from 'store'
 
 export const useReviewsHooks = () => {
   const reviewsData = useSelector((state: AppStateType) => state.reviewsData.reviewsData)

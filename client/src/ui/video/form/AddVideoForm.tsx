@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import shortid from 'shortid'
-import firebaseApp from '../../../firebase/firebase'
-
 import { useDispatch } from 'react-redux'
+import { Field, Form, Formik } from 'formik'
+
+import firebaseApp from 'firebase/firebase'
 import { VideoType } from '../intarfaces/videoPage/videoPageInterfaces'
 import { updateVideos } from '../store/action'
-import { Field, Form, Formik } from 'formik'
 import { validate } from './validate'
 
 import styles from './AddVideoForm.module.scss'
-import { type } from 'os'
 
 type Props = {
   title: string
@@ -17,7 +16,6 @@ type Props = {
 }
 
 export const AddVideoForm: React.VFC<Props> = ({title, videoData}) => {
-
   const [token, setToken] = useState('')
   const dispatch = useDispatch()
 

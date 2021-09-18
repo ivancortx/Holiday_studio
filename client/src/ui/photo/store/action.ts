@@ -16,35 +16,13 @@ export const setPhotos = (data: Array<PhotoType>): SetPhotosType => ({
   data
 })
 
-  export const fetchPhotos = (title: string, token: string) => async (dispatch: Dispatch<ActionsTypes>) => {
-  const response = await loadPhotos(title, token)
+  export const fetchPhotos = (title: string) => async (dispatch: Dispatch<ActionsTypes>) => {
+  const response = await loadPhotos(title)
   const data: PhotoType[] = await response.data[`${title}`]
   dispatch(setPhotos(data))
 }
 
-export const updatePhotos = (title: string, data: object, token: string) => async (dispatch: Dispatch<ActionsTypes>) => {
+export const updatePhotos = (title: string, data: object, token: string) => async () => {
   await sendPhoto(title, data, token)
-  fetchPhotos(title, token)
+  fetchPhotos(title)
 }
-
-
-// export const addPost = (post: PostType, posts: PostType[]) => () => {
-//   posts[posts.length] = post
-//
-//   const base = firebase.firestore();
-//   base.collection("homeData").doc("homeData-postsData").set({ postsData: posts })
-// }
-//
-// export const deletePost = (post: PostType, posts: PostType[]) => () => {
-//   let newPosts: PostType[] = []
-//   posts.map((p) => {
-//     if (p.id !== post.id) {
-//       newPosts.push(p)
-//     }
-//     return newPosts
-//   })
-//
-//   const base = firebase.firestore();
-//   base.collection("homeData").doc("homeData-postsData").set({ postsData: newPosts })
-// }
-

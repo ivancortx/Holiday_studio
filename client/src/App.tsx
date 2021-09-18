@@ -3,9 +3,9 @@ import { BrowserRouter } from 'react-router-dom'
 
 import { NavigationPage } from './ui/navigation/pages'
 import { AppRoutes } from './ui/navigation/components/AppRoutes'
+import { FooterPage } from './ui/footer/pages/FooterPage'
 
 import './App.scss'
-import { FooterPage } from './ui/footer/pages/FooterPage'
 
 const App: React.FC = () => {
   return (

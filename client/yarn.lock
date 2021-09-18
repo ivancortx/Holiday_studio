@@ -2347,6 +2347,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-portal@^4.0.3":
+  "integrity" "sha512-uioKoL023cFPzMrM0IpIlaxJhtOPF02txaVkUjqjPYFD4T2HeyFxqMWcRPCY/AhagxwQX7luB+ZOoZty+JXYng=="
+  "resolved" "https://registry.npmjs.org/@types/react-portal/-/react-portal-4.0.3.tgz"
+  "version" "4.0.3"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-redux@^7.1.16", "@types/react-redux@^7.1.18":
   "integrity" "sha512-9iwAsPyJ9DLTRH+OFeIrm9cAbIj1i2ANL3sKQFATqnPWRbg+jEFXyZOKHiQK/N86pNRXbb4HRxAxo0SIX1XwzQ=="
   "resolved" "https://registry.npmjs.org/@types/react-redux/-/react-redux-7.1.18.tgz"

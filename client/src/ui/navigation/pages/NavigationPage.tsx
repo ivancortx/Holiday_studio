@@ -1,31 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuthState } from 'react-firebase-hooks/auth'
 
+import firebaseApp from 'firebase/firebase'
 import { Routes } from '../const/routes'
 import { Login } from '../components/Login'
 import { LogOut } from '../components/LogOut'
-
-import styles from './NavidationPage.module.scss'
-import firebaseApp from '../../../firebase/firebase'
 import { Button } from '../components/Button'
 import logo from 'assets/images/logo.png'
 
+import styles from './NavidationPage.module.scss'
+
 export const NavigationPage: React.VFC = () => {
-
-  const [token, setToken] = useState('')
-
-
-  const [isAuthorized, setIsAuthorized] = useState(false ||
-    window.localStorage.getItem('auth') === 'true')
-
   const auth = firebaseApp.auth()
   const userIsAuth: any = useAuthState(auth)
-
-  useEffect(() => {
-    window.localStorage.setItem('auth', 'true')
-  }, [token])
-
 
   return (
     <div className={styles.navContainer}>
@@ -35,13 +23,9 @@ export const NavigationPage: React.VFC = () => {
         </div>
         <div className={styles.authButton}>
           {userIsAuth[0] ?
-            <LogOut auth={auth}
-                    setIsAuthorized={setIsAuthorized}/>
+            <LogOut auth={auth}/>
             :
-            <Login auth={auth}
-                   setToken={setToken}
-                   setIsAuthorized={setIsAuthorized}
-            />
+            <Login auth={auth}/>
           }
         </div>
       </div>
@@ -62,7 +46,6 @@ export const NavigationPage: React.VFC = () => {
           <Link to={Routes.ReviewsPage}><Button text={'Відгуки'}/></Link>
         </div>
       </div>
-
     </div>
   )
 }

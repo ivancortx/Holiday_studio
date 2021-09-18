@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+
+import firebaseApp from 'firebase/firebase'
+import { AppStateType } from 'store'
+import { updateUserRole } from '../store/action'
 
 import styles from './LoginAndLogout.module.scss'
 
-import firebaseApp from '../../../firebase/firebase'
-import { AppStateType } from '../../../store'
-import { updateUserRole } from '../store/action'
-
 type Props = {
   auth: any
-  setIsAuthorized: (arg: boolean) => void
 }
 
-export const LogOut: React.VFC<Props> = ({ auth, setIsAuthorized }) => {
+export const LogOut: React.VFC<Props> = ({ auth }) => {
   const dispatch = useDispatch()
   const userData = useSelector((state: AppStateType) => state.userData.userData)
   const login = async () => {
@@ -31,12 +30,10 @@ export const LogOut: React.VFC<Props> = ({ auth, setIsAuthorized }) => {
 
   const exit = () => {
     auth.signOut()
-    setIsAuthorized(false)
-    localStorage.clear()
   }
 
   return (
-    <div className={styles.container} >
+    <div className={styles.container}>
       {userData[0] && <span className={styles.nameUser}>{userData[0].name}, </span>}
       <span onClick={exit} className={styles.btn}>Вийти</span>
     </div>

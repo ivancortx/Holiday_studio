@@ -33,7 +33,6 @@
   }
 
   .title {
-    text-align: center;
     margin-bottom: 10px;
 
     &:before {
@@ -49,8 +48,6 @@
   }
 
   .linksBlock {
-    width: 100%;
-    display: grid;
     grid-template-columns: 100%;
     grid-gap: 0;
 

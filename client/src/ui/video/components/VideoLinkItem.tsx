@@ -1,10 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-
-import styles from './VideoLinkItem.module.scss'
 import { VideoCategoryType } from '../intarfaces/videoPage/videoPageInterfaces'
 
+import styles from './VideoLinkItem.module.scss'
 
 type Props = {
   category: VideoCategoryType
@@ -12,8 +11,7 @@ type Props = {
 
 export const VideoLinkItem: React.VFC<Props> = ({ category }) => {
   return (
-    <NavLink to={`/video/${category.title}`}>
-    <div className={styles.link}>
+    <NavLink className={styles.link} to={`/video/${category.title}`}>
       <div>
         <img src={category.image} alt='img'/>
       </div>
@@ -22,7 +20,6 @@ export const VideoLinkItem: React.VFC<Props> = ({ category }) => {
           <span>{category.name}</span>
         </div>
       </div>
-    </div>
     </NavLink>
   )
 }

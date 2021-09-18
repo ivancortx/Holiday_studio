@@ -1,7 +1,6 @@
 import { Dispatch } from 'react'
 
 import { WRITE_CURRENT_USER_DATA } from './types'
-
 import { sendUserData } from 'api/api'
 import { UserDataType } from '../interfaces/navigationPage/navigationPageInterfaces'
 
