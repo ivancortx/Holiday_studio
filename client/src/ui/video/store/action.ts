@@ -22,7 +22,8 @@ export const fetchVideos = (title: string) => async (dispatch: Dispatch<ActionsT
   dispatch(SetVideos(data))
 }
 
-export const updateVideos = (title: string, data: object, token: string) => async (dispatch: Dispatch<ActionsTypes>) => {
+export const updateVideos = (title: string, data: object, token: string) => async (dispatch: any) => {
   await sendVideo(title, data, token)
-  fetchVideos(title)
+    .then(response => dispatch(fetchVideos(title)))
+
 }

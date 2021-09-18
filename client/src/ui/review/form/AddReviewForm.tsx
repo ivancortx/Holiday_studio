@@ -4,12 +4,13 @@ import shortid from 'shortid'
 import { Field, Form, Formik } from 'formik'
 
 import firebaseApp from 'firebase/firebase'
-import { updateReviews } from '../store/action'
+import { fetchReviews, updateReviews } from '../store/action'
 import { validate } from './validate'
 import { ReviewType } from '../interfaces/reviewPage/reviewPageInterfaces'
 import { UserDataType } from 'ui/navigation/interfaces/navigationPage/navigationPageInterfaces'
 
 import styles from './AddReviewForm.module.scss'
+import { sendReview } from '../../../api/api'
 
 type Props = {
   reviewsData: ReviewType[]

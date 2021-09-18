@@ -20,89 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db9c5f9-5a70-4017-8d80-a7eaa06a1fee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/ui/shared/useShared.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.env" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/components/AddPost.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/components/PostItem.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/components/PostItem.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/forms/AddPostForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/forms/AddPostFormField.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/forms/validate.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/hooks/useHomePage.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/interfaces/postItem/postItemInterfaces.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/pages/HomePage/HomePage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/pages/HomePage/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/store/action.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/store/reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/logicExamp/store/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/aboutMe/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/aboutMe/pages/AboutMePage/AboutMePage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/aboutMe/pages/AboutMePage/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/footer/pages/FooterPage/FooterPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/footer/pages/FooterPage/FooterPage.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/footer/pages/FooterPage/FooterPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/footer/pages/FooterPage/FooterPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/home/pages/homePage/HomePage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/home/pages/homePage/HomePage.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/home/pages/homePage/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/home/pages/homePage/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/AppRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/AppRoutes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/Button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/Button.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/LogOut.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/LogOut.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavidationPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavidationPage.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavigationPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavigationPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/store/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/store/action.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/CategoryTranslator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/CategoryTranslator.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/DeletePhoto.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/DeletePhoto.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoLinkItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoLinkItem.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoLinkItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoLinkItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/Portal.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/Portal.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/Portal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/Portal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/hooks/usePhotoPageHooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/hooks/usePhotoPageHooks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/pages/PhotoPage/PhotoPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/pages/PhotoPage/PhotoPage.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/pages/PhotoPage/PhotoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/pages/PhotoPage/PhotoPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/ui/photo/store/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/store/action.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/ui/photo/store/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/store/reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/review/components/Reviews.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/components/Reviews.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/review/components/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/components/Reviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/review/form/AddReviewForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/form/AddReviewForm.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/store/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/store/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/ui/review/form/AddReviewForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/form/AddReviewForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/review/hooks/useReviewsHooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/hooks/useReviewsHooks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/review/pages/ReviewsPage/ReviewPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/pages/ReviewsPage/ReviewPage.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/review/pages/ReviewsPage/ReviewsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/pages/ReviewsPage/ReviewsPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/ui/review/store/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/store/action.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/review/store/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/store/reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/services/pages/ServicesPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/services/pages/ServicesPage.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/services/pages/ServicesPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/services/pages/ServicesPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/CategoryTranslator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/CategoryTranslator.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/DeleteVideo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/DeleteVideo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/Portal.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/Portal.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/VideoByCategory.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoByCategory.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/VideoByCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoByCategory.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/VideoLinkItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoLinkItem.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/VideoLinkItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoLinkItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/form/AddVideoForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/form/AddVideoForm.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/form/AddVideoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/form/AddVideoForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/hooks/useVideoPageHooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/hooks/useVideoPageHooks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/pages/VideoPage/VideoPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/pages/VideoPage/VideoPage.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/video/pages/VideoPage/VideoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/pages/VideoPage/VideoPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/shared/useShared.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/shared/useShared.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/ui/video/store/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/store/action.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/controllers/holidayStudioController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controllers/holidayStudioController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/middleware/addReviewCheckRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/middleware/addReviewCheckRole.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/middleware/fetchPhotoCheckRole.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/middleware/updateContentCheckRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/middleware/updateContentCheckRole.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +81,7 @@
       <workItem from="1631733333510" duration="724000" />
       <workItem from="1631734072646" duration="20164000" />
       <workItem from="1631810809280" duration="1251000" />
-      <workItem from="1631812960268" duration="52603000" />
+      <workItem from="1631812960268" duration="55143000" />
     </task>
     <servers />
   </component>
