@@ -3,6 +3,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const holidayStudioRoutes = require('./src/routes/routes')
 const updateContentCheckRole = require('./src/middleware/updateContentCheckRole')
+require("dotenv").config()
 
 const addReviewCheckRole = require('./src/middleware/addReviewCheckRole')
 const app = express()
@@ -19,4 +20,4 @@ app.post('/api/add-review', addReviewCheckRole)
 
 app.use('/api', holidayStudioRoutes.routes)
 
-app.listen(PORT, () => console.log('App is listening on url http://localhost:' + PORT))
+app.listen(process.env.PORT || 5000, () => console.log('App is listening on url http://localhost:' + PORT))
