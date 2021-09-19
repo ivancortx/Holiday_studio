@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db9c5f9-5a70-4017-8d80-a7eaa06a1fee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/example.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/scss/custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavidationPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavidationPage.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,7 @@
       <workItem from="1631812960268" duration="63055000" />
       <workItem from="1632069453907" duration="1025000" />
       <workItem from="1632077825248" duration="914000" />
-      <workItem from="1632079363913" duration="6114000" />
+      <workItem from="1632079363913" duration="6788000" />
     </task>
     <servers />
   </component>
