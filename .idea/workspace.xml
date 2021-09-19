@@ -20,9 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db9c5f9-5a70-4017-8d80-a7eaa06a1fee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.env" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/example.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/scss/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavidationPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavidationPage.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,21 +46,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/ui/review" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../holiday_studio_client" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\video\form" />
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\server" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\review" />
       <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\server\src\middleware" />
       <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\review\hooks" />
       <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\review\store" />
       <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\public" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\video\form" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\server" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -76,7 +81,10 @@
       <workItem from="1631733333510" duration="724000" />
       <workItem from="1631734072646" duration="20164000" />
       <workItem from="1631810809280" duration="1251000" />
-      <workItem from="1631812960268" duration="62488000" />
+      <workItem from="1631812960268" duration="63055000" />
+      <workItem from="1632069453907" duration="1025000" />
+      <workItem from="1632077825248" duration="914000" />
+      <workItem from="1632079363913" duration="6114000" />
     </task>
     <servers />
   </component>
@@ -108,10 +116,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="927" y="457" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631828268543" />
-    <state x="947" y="456" key="FileChooserDialogImpl" timestamp="1631779182197">
+    <state x="947" y="456" key="FileChooserDialogImpl" timestamp="1632081285466">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="947" y="456" key="FileChooserDialogImpl/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631779182197" />
+    <state x="947" y="456" key="FileChooserDialogImpl/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1632081285466" />
     <state x="768" y="311" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1631650414096">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
