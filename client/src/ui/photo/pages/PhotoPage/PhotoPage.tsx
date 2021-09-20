@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { usePhotoPageHooks } from '../../hooks/usePhotoPageHooks'
-import { PhotoLinkItem } from '../../components/PhotoLinkItem'
+import { PhotoLinkItem } from '../../components/PhotoLinkItem/PhotoLinkItem'
 
 import styles from './PhotoPage.module.scss'
 

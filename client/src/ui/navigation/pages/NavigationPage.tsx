@@ -1,19 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useAuthState } from 'react-firebase-hooks/auth'
 
-import firebaseApp from 'firebase/firebase'
 import { Routes } from '../const/routes'
-import { Login } from '../components/Login'
-import { LogOut } from '../components/LogOut'
-import { Button } from '../components/Button'
+import { Login } from '../components/LoginAndLogout/Login'
+import { LogOut } from '../components/LoginAndLogout/LogOut'
+import { Button } from '../components/Button/Button'
+import { useNavigationPage } from '../hooks/useNavigationPage'
 import logo from 'assets/images/logo.png'
 
 import styles from './NavidationPage.module.scss'
 
 export const NavigationPage: React.VFC = () => {
-  const auth = firebaseApp.auth()
-  const userIsAuth: any = useAuthState(auth)
+  const { userIsAuth, auth } = useNavigationPage()
 
   return (
     <div className={styles.navContainer}>

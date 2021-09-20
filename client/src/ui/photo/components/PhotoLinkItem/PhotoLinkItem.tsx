@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-import { PhotoCategoryType } from '../interfaces/photoPage/photoPageInterfaces'
+import { PhotoCategoryType } from '../../interfaces/photoPage/photoPageInterfaces'
 
 import styles from './PhotoLinkItem.module.scss'
 

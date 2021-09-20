@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { usePhotoPageHooks } from '../hooks/usePhotoPageHooks'
+import { usePhotoPageHooks } from '../../hooks/usePhotoPageHooks'
 import { useParams } from 'react-router'
 import { useDispatch } from 'react-redux'
 
-import { fetchPhotos } from '../store/action'
-import { AddPhotoForm } from './AddPhotoForm'
-import { CategoryTranslator } from './CategoryTranslator'
-import { DeletePhoto } from './DeletePhoto'
-import { Portal } from './Portal'
-import { PhotoType } from '../interfaces/photoPage/photoPageInterfaces'
+import { fetchPhotos } from '../../store/action'
+import { AddPhotoForm } from '../../forms/AddPhotoForm'
+import { CategoryTranslator } from '../CategoryTranslator/CategoryTranslator'
+import { DeletePhoto } from '../DeletePhoto/DeletePhoto'
+import { Portal } from '../Portal/Portal'
+import { PhotoType } from '../../interfaces/photoPage/photoPageInterfaces'
 
 import styles from './PhotoByCategory.module.scss'
 

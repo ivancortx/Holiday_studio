@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useVideoPageHooks } from '../../hooks/useVideoPageHooks'
-import { VideoLinkItem } from '../../components/VideoLinkItem'
+import { VideoLinkItem } from '../../components/VideoLinkItem/VideoLinkItem'
 
 import styles from './VideoPage.module.scss'
 

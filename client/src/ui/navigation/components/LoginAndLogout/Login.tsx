@@ -11,7 +11,7 @@ export const Login: React.VFC<Props> = ({ auth }) => {
   const login = async () => {
     const provider = new firebase.auth.GoogleAuthProvider()
     await auth.signInWithPopup(provider)
-      // .catch(() => {})
+      .catch(() => {})
   }
 
   return (

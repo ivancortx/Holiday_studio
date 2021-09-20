@@ -1,13 +1,13 @@
 import React from 'react'
 import { Redirect, Route, Switch } from 'react-router-dom'
 
-import { Routes } from '../const/routes'
+import { Routes } from '../../const/routes'
 import { HomePage } from 'ui/home'
 import { PhotoPage } from 'ui/photo/pages/PhotoPage'
-import { PhotoByCategory } from 'ui/photo/components/PhotoByCategory'
+import { PhotoByCategory } from 'ui/photo/components/PhotoByCategory/PhotoByCategory'
 import { ReviewsPage } from 'ui/review/pages/ReviewsPage'
 import { VideoPage } from 'ui/video/pages/VideoPage'
-import { VideoByCategory } from 'ui/video/components/VideoByCategory'
+import { VideoByCategory } from 'ui/video/components/VideoByCapegory/VideoByCategory'
 import { ServicesPage } from 'ui/services/pages'
 
 export const AppRoutes: React.VFC = () => {

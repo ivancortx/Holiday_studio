@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import shortid from 'shortid'
 import { useDispatch } from 'react-redux'
 import { Field, Form, Formik } from 'formik'
 
-import firebaseApp from 'firebase/firebase'
 import { VideoType } from '../intarfaces/videoPage/videoPageInterfaces'
 import { updateVideos } from '../store/action'
 import { validate } from './validate'
 
 import styles from './AddVideoForm.module.scss'
+import { AuthContext } from 'context/AuthContext'
 
 type Props = {
   title: string
@@ -16,22 +16,8 @@ type Props = {
 }
 
 export const AddVideoForm: React.VFC<Props> = ({title, videoData}) => {
-  const [token, setToken] = useState('')
   const dispatch = useDispatch()
-
-  const fetchToken = async () => {
-    await firebaseApp.auth().onAuthStateChanged((userCred) => {
-      if (userCred) {
-        userCred.getIdToken().then((tokenId) => {
-          setToken(tokenId)
-        })
-      }
-    })
-  }
-
-  useEffect(() => {
-    fetchToken()
-  }, [])
+  const token = useContext(AuthContext)
 
   return (
     <Formik

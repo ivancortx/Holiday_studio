@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 
-import { PhotoType } from '../interfaces/photoPage/photoPageInterfaces'
+import { PhotoType } from '../../interfaces/photoPage/photoPageInterfaces'
 import firebaseApp from 'firebase/firebase'
-import { updatePhotos } from '../store/action'
+import { updatePhotos } from '../../store/action'
 import deleteButton from 'assets/images/deleteItem.png'
+import { AuthContext } from '../../../../context/AuthContext'
 
 type Props = {
   photo: PhotoType
@@ -15,23 +16,9 @@ type Props = {
 export const DeletePhoto: React.VFC<Props> = ({ photo, photoData, title }) => {
   const storageRef = firebaseApp.storage().ref()
   const photoRef = storageRef.child(`${photo.path}`)
-  const [token, setToken] = useState('')
-
-  const fetchToken = async () => {
-    await firebaseApp.auth().onAuthStateChanged((userCred) => {
-      if (userCred) {
-        userCred.getIdToken().then((tokenId) => {
-          setToken(tokenId)
-        })
-      }
-    })
-  }
-
-  useEffect(() => {
-    fetchToken()
-  }, [])
-
+  const token = useContext(AuthContext)
   const dispatch = useDispatch()
+
   const deletePhoto = () => {
     photoRef.delete().then(() => {
       const newArray = photoData.filter(p => photo.id !== p.id);

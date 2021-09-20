@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { PhotoType } from '../interfaces/photoPage/photoPageInterfaces'
+import { PhotoType } from '../../interfaces/photoPage/photoPageInterfaces'
 import close from 'assets/images/closeModal.png'
 
 import styles from './Portal.module.scss'

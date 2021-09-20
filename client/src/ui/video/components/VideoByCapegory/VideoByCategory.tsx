@@ -2,11 +2,11 @@ import React, { useEffect } from 'react'
 import { useParams } from 'react-router'
 import { useDispatch } from 'react-redux'
 
-import { CategoryTranslator } from './CategoryTranslator'
-import { useVideoPageHooks } from '../hooks/useVideoPageHooks'
-import { DeleteVideo } from './DeleteVideo'
-import { AddVideoForm } from '../form/AddVideoForm'
-import { fetchVideos } from '../store/action'
+import { CategoryTranslator } from '../CategoryTranslator/CategoryTranslator'
+import { useVideoPageHooks } from '../../hooks/useVideoPageHooks'
+import { DeleteVideo } from '../DeleteVideo/DeleteVideo'
+import { AddVideoForm } from '../../form/AddVideoForm'
+import { fetchVideos } from '../../store/action'
 
 import styles from './VideoByCategory.module.scss'
 

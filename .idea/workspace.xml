@@ -20,9 +20,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db9c5f9-5a70-4017-8d80-a7eaa06a1fee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/AuthContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/home/components/HomePageLink.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/home/components/HomePageLink.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ui/navigation/hooks/useNavigationPage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.env" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/home/pages/homePage/HomePage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/home/pages/homePage/HomePage.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/home/pages/homePage/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/home/pages/homePage/HomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/AppRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/AppRoutes/AppRoutes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/Button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/Button/Button.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/LogOut.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/LoginAndLogout/LogOut.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/LoginAndLogout/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/components/LoginAndLogout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/components/LoginAndLogout/LoginAndLogout.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavigationPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/pages/NavigationPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/navigation/pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/navigation/pages/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/forms/AddPhotoForm.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/AddPhotoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/forms/AddPhotoForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/CategoryTranslator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/CategoryTranslator/CategoryTranslator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/DeletePhoto.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/DeletePhoto/DeletePhoto.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory/PhotoByCategory.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoByCategory/PhotoByCategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoLinkItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoLinkItem/PhotoLinkItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoLinkItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/PhotoLinkItem/PhotoLinkItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/Portal.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/Portal/Portal.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/components/Portal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/components/Portal/Portal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/pages/PhotoPage/PhotoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/pages/PhotoPage/PhotoPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/photo/store/action.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/photo/store/action.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/review/form/AddReviewForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/review/form/AddReviewForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/CategoryTranslator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/CategoryTranslator/CategoryTranslator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/DeleteVideo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/DeleteVideo/DeleteVideo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/VideoByCategory.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoByCapegory/VideoByCategory.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/VideoByCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoByCapegory/VideoByCategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/VideoLinkItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoLinkItem/VideoLinkItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/video/components/VideoLinkItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/components/VideoLinkItem/VideoLinkItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/video/form/AddVideoForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/form/AddVideoForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/video/pages/VideoPage/VideoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/video/pages/VideoPage/VideoPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +83,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\public" />
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\video\form" />
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\server" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\navigation\components\LoginAndLogout" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\navigation\components\Button" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\navigation\components\AppRoutes" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\photo\components\Portal" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\photo\components\PhotoLinkItem" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio" />
@@ -80,7 +117,7 @@
       <workItem from="1631812960268" duration="63055000" />
       <workItem from="1632069453907" duration="1025000" />
       <workItem from="1632077825248" duration="914000" />
-      <workItem from="1632079363913" duration="7543000" />
+      <workItem from="1632079363913" duration="21668000" />
     </task>
     <servers />
   </component>
@@ -104,10 +141,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="823" y="388" key="#Inspections/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631736435081" />
-    <state x="935" y="503" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1632126370929">
+    <state x="935" y="503" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1632156348921">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="935" y="503" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1632126370929" />
+    <state x="935" y="503" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1632156348921" />
     <state x="927" y="457" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631828268543">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -116,10 +153,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="947" y="456" key="FileChooserDialogImpl/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1632081285466" />
-    <state x="768" y="311" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1631650414096">
+    <state x="768" y="311" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1632165422001">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="768" y="311" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631650414096" />
+    <state x="768" y="311" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1632165422001" />
     <state x="905" y="445" width="585" height="530" key="find.popup" timestamp="1631987232677">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

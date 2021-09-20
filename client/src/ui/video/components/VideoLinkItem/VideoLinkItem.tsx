@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-import { VideoCategoryType } from '../intarfaces/videoPage/videoPageInterfaces'
+import { VideoCategoryType } from '../../intarfaces/videoPage/videoPageInterfaces'
 
 import styles from './VideoLinkItem.module.scss'
 

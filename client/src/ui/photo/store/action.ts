@@ -16,7 +16,7 @@ export const setPhotos = (data: Array<PhotoType>): SetPhotosType => ({
   data
 })
 
-  export const fetchPhotos = (title: string) => async (dispatch: Dispatch<ActionsTypes>) => {
+export const fetchPhotos = (title: string) => async (dispatch: Dispatch<ActionsTypes>) => {
   const response = await loadPhotos(title)
   const data: PhotoType[] = await response.data[`${title}`]
   dispatch(setPhotos(data))

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-import { AppStateType } from '../../../store'
+import { AppStateType } from '../../../../store'
 
 type Props = {
   title: string

@@ -67,14 +67,10 @@ const saveUser = async (req, res) => {
     const decodeValue= await admin.auth().verifyIdToken(token)
     const userId = decodeValue.uid
 
-    admins.filter(item => {
-      if (item.email === decodeValue.email) {
-        decodeValue["roles"] = ["user", "admin"]
-      } else {
-        decodeValue["roles"] = ["user"]
-      }
-     return decodeValue
-    })
+    const newAdmin = admins.filter(item => item.email === decodeValue.email)
+    if (newAdmin[0].email === decodeValue.email) {
+      decodeValue["roles"] = ["user", "admin"]
+    } else decodeValue["roles"] = ["user"]
 
     await firestore.collection("usersData").doc(userId).set(decodeValue)
     return res.json(decodeValue)

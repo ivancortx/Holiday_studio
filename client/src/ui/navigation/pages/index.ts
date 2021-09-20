@@ -1,2 +1,2 @@
 export { NavigationPage } from './NavigationPage'
-export { Login } from '../components/Login'
+export { Login } from '../components/LoginAndLogout/Login'
