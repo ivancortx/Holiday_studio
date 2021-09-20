@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8db9c5f9-5a70-4017-8d80-a7eaa06a1fee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/scss/custom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,22 +42,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../holiday_studio_client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\review" />
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\server\src\middleware" />
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\review\hooks" />
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\review\store" />
-      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\services" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\public" />
       <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\video\form" />
       <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\server" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\review" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\server\src\middleware" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\review\hooks" />
+      <recent name="C:\Users\User\Desktop\Курс foxminded\React\untitled\holiday_studio\client\src\ui\review\store" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -78,7 +80,7 @@
       <workItem from="1631812960268" duration="63055000" />
       <workItem from="1632069453907" duration="1025000" />
       <workItem from="1632077825248" duration="914000" />
-      <workItem from="1632079363913" duration="6788000" />
+      <workItem from="1632079363913" duration="7543000" />
     </task>
     <servers />
   </component>
@@ -102,10 +104,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="823" y="388" key="#Inspections/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631736435081" />
-    <state x="935" y="503" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1631549061106">
+    <state x="935" y="503" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1632126370929">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="935" y="503" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1631549061106" />
+    <state x="935" y="503" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.1.1536.824@0.0.2560.1400" timestamp="1632126370929" />
     <state x="927" y="457" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631828268543">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
