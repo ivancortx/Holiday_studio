@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import firebase from 'firebase/compat'
+import { AuthUpdateContext } from 'context/AuthContext'
 
 import styles from './LoginAndLogout.module.scss'
 
@@ -8,10 +9,13 @@ type Props = {
 }
 
 export const Login: React.VFC<Props> = ({ auth }) => {
+  const setIsAuth = useContext(AuthUpdateContext)
+
   const login = async () => {
     const provider = new firebase.auth.GoogleAuthProvider()
     await auth.signInWithPopup(provider)
-      .catch(() => {})
+      .then(()=>{setIsAuth(true)})
+      .catch(()=>{})
   }
 
   return (

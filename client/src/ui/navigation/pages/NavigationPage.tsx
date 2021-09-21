@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Routes } from '../const/routes'
@@ -9,9 +9,11 @@ import { useNavigationPage } from '../hooks/useNavigationPage'
 import logo from 'assets/images/logo.png'
 
 import styles from './NavidationPage.module.scss'
+import { IsAuthContext } from '../../../context/AuthContext'
 
 export const NavigationPage: React.VFC = () => {
-  const { userIsAuth, auth } = useNavigationPage()
+  const { auth } = useNavigationPage()
+  const isAuth = useContext(IsAuthContext)
 
   return (
     <div className={styles.navContainer}>
@@ -20,7 +22,7 @@ export const NavigationPage: React.VFC = () => {
           <img src={logo} alt={'img'}/>
         </div>
         <div className={styles.authButton}>
-          {userIsAuth[0] ?
+          {isAuth ?
             <LogOut auth={auth}/>
             :
             <Login auth={auth}/>

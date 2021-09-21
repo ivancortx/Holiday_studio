@@ -12,9 +12,8 @@
 .linksBlock {
   width: 100%;
   display: grid;
-  grid-template-columns: 32% 32% 32%;
+  grid-template-columns: 33.33333% 33.33333% 33.33333%;
   grid-auto-rows: 15vw;
-
   grid-gap: 1%;
 }
 
@@ -55,7 +54,6 @@
   position: absolute;
   text-align: left;
   z-index: 2;
-
 
   img {
     box-shadow: none;
