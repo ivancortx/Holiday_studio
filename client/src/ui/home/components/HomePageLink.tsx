@@ -1,18 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { Routes } from '../../navigation/const/routes'
-
 import styles from './HomePageLink.module.scss'
 
 type Props = {
   photoUrl: string
   categoryName: string
+  route: any
 }
 
-export const HomePageLink: React.VFC<Props> = ({photoUrl, categoryName}) => {
+export const HomePageLink: React.VFC<Props> = ({photoUrl, categoryName, route}) => {
   return (
-    <Link to={Routes.PhotoPage}>
+    <Link to={route}>
       <div className={styles.link}>
         <div>
           <img src={photoUrl} alt={'one'}/>
