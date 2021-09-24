@@ -14,9 +14,6 @@ export const FooterPage: React.VFC = () => {
         <div className={styles.contactsItem}>
           <a href="tel:+380674052889">(067)-405-28-89, Олександр</a>
         </div>
-        <div className={styles.contactsItem}>
-          <a href="mailto:test@gmail.com">test@gmail.com</a>
-        </div>
         <div className={styles.messengers}>
           <div>
             <a href="#">

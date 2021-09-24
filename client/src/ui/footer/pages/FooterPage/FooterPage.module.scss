@@ -19,7 +19,7 @@
   margin: 0 auto 15px;
   width: 82%;
   display: grid;
-  grid-template-columns: repeat(3, 33.3%);
+  grid-template-columns: repeat(2, 50%);
 }
 
 .contactsItem {
@@ -64,10 +64,6 @@
 
   .contactsBlock {
     grid-template-columns: 100%;
-  }
-
-  .contactsItem {
-    display: none;
   }
 
   .messengers img {
