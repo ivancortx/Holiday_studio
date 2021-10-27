@@ -9,7 +9,7 @@ import { ReviewType } from '../interfaces/reviewPage/reviewPageInterfaces'
 import { UserDataType } from 'ui/navigation/interfaces/navigationPage/navigationPageInterfaces'
 
 import styles from './AddReviewForm.module.scss'
-import { AuthContext } from '../../../context/AuthContext'
+import { AuthContext } from 'context/AuthContext'
 
 type Props = {
   reviewsData: ReviewType[]
@@ -40,7 +40,7 @@ export const AddReviewForm: React.VFC<Props> = ({ reviewsData, userData }) => {
         <h4>Напишіть відгук</h4>
         <Form className={styles.form}>
           <Field component="textarea" className="form-control" id="text" name="text" placeholder="Введіть відгук"/>
-          <button type='submit' className="btn btn-success">Написати</button>
+          <button type='submit' className="btn btn-success mt-3">Написати</button>
         </Form>
       </div>
     </Formik>

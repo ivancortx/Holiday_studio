@@ -9,8 +9,10 @@ import { CategoryTranslator } from '../CategoryTranslator/CategoryTranslator'
 import { DeletePhoto } from '../DeletePhoto/DeletePhoto'
 import { Portal } from '../Portal/Portal'
 import { PhotoType } from '../../interfaces/photoPage/photoPageInterfaces'
+import { Preloader } from '../Preloader/Preloader'
 
 import styles from './PhotoByCategory.module.scss'
+
 
 export const PhotoByCategory: React.VFC = () => {
   const dispatch = useDispatch()
@@ -35,7 +37,7 @@ export const PhotoByCategory: React.VFC = () => {
   }
 
   return (
-    photoData ?
+    photoData[0] ?
       <div className={styles.container}>
         <div className={styles.title}>
           <CategoryTranslator title={title}/>
@@ -66,8 +68,8 @@ export const PhotoByCategory: React.VFC = () => {
                                   photoData={photoData}/>}
       </div>
       :
-      <div className={styles.empty}>
-        Фотографії в даному розділі відсутні
+      <div>
+        <Preloader/>
         {isAdmin && <AddPhotoForm title={title}
                                   photoData={photoData}/>}
       </div>

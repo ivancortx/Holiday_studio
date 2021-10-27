@@ -9,6 +9,7 @@ import { AddVideoForm } from '../../form/AddVideoForm'
 import { fetchVideos } from '../../store/action'
 
 import styles from './VideoByCategory.module.scss'
+import { Preloader } from 'ui/photo'
 
 export const VideoByCategory: React.VFC = () => {
   const dispatch = useDispatch()
@@ -21,7 +22,7 @@ export const VideoByCategory: React.VFC = () => {
   }, [title, dispatch])
 
   return (
-    videoData ?
+    videoData[0] ?
       <div className={styles.container}>
         <div className={styles.title}>
           <CategoryTranslator title={title}/>
@@ -50,8 +51,8 @@ export const VideoByCategory: React.VFC = () => {
                                   videoData={videoData}/>}
       </div>
       :
-      <div className={styles.empty}>
-        Відео матеріали в даному розділі відсутні
+      <div>
+        <Preloader />
         {isAdmin && <AddVideoForm title={title}
                                   videoData={videoData}/>}
       </div>
